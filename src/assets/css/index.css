@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animations-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animations-delay-4000 {
+    animation-delay: 4s;
+  }
+}
