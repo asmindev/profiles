@@ -1,9 +1,11 @@
 module.exports = {
   content: ['./src/**/*.{js, jsx}', './public/index.html'],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        popins: ['Poppins', 'sans-serif']
+        popins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif']
       },
       animation: {
         blob: 'blob 7s infinite'
