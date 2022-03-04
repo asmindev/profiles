@@ -35,7 +35,7 @@ function About() {
         <motion.div
           initial={{ borderRadius: 0 }}
           whileInView={{ borderRadius: '50%', transition: { duration: 0.5, delay: 0.5 } }}
-          className="overflow-hidden w-10/12 mx-auto mt-10 md:w-1/2 border border-gray-200 shadow"
+          className="overflow-hidden w-10/12 mx-auto mt-10"
         >
           <motion.img
             initial={{
@@ -69,6 +69,7 @@ function About() {
             },
           }}
           viewport={{ once: true }}
+          className="px-4"
         >
           <p className="dark:text-slate-100 py-8 text-slate-600 smooth leading-normal text-base font-extralight text-justify">
             I am

@@ -94,14 +94,24 @@ export default function Home() {
               offset={-50}
               duration={700}
             >
-              <motion.button
-                variants={letterAnimation}
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.1 }}
-                className="font-popins tracking-wider mt-4 text-xs uppercase font-bold bg-indigo-500 text-white px-4 py-3 rounded-full"
+              <motion.div
+                initial={{ y: 40 }}
+                whileInView={{
+                y: 0,
+                transition: {
+                  duration: Infinity,
+                }
+              }}
               >
-                Scrool down
-              </motion.button>
+                <motion.button
+                  variants={letterAnimation}
+                  whileTap={{ scale: 0.9 }}
+                  whileHover={{ scale: 1.1 }}
+                  className="font-popins block tracking-wider text-xs uppercase font-bold bg-indigo-500 text-white px-4 py-3 rounded-full"
+                >
+                  Scrool down
+                </motion.button>
+              </motion.div>
             </Link>
           </motion.div>
         </div>
