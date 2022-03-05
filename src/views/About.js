@@ -17,25 +17,10 @@ function About() {
   return (
     <div className="px-4 h-screen md:h-max w-full flex justify-center">
       <motion.div className="w-full">
-        <div className="w-fit mx-auto">
-          <div className="px-2">
-            <div className="flex gap-2 text-slate-800 dark:text-slate-50 smooth">
-              <TextAnimation text="About" />
-              <TextAnimation text="Me" />
-            </div>
-          </div>
-          <div className="w-full mx-auto">
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: '100%', transition: { duration: 1 } }}
-              className="bg-indigo-500 rounded h-1"
-            />
-          </div>
-        </div>
         <motion.div
           initial={{ borderRadius: 0 }}
           whileInView={{ borderRadius: '50%', transition: { duration: 0.5, delay: 0.5 } }}
-          className="overflow-hidden w-10/12 mx-auto mt-10"
+          className="overflow-hidden w-1/2 mx-auto mt-10"
         >
           <motion.img
             initial={{
@@ -56,6 +41,21 @@ function About() {
             alt="User alt"
           />
         </motion.div>
+        <div className="w-fit mx-auto">
+          <div className="px-2">
+            <div className="flex gap-2 text-slate-800 dark:text-slate-50 smooth">
+              <TextAnimation text="About" />
+              <TextAnimation text="Me" />
+            </div>
+          </div>
+          <div className="w-full mx-auto">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '100%', transition: { duration: 1 } }}
+              className="bg-indigo-500 rounded h-1"
+            />
+          </div>
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{
