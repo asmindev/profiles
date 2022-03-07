@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/profiles/static/css/main.a6497ee6.css",
-    "main.js": "/profiles/static/js/main.8acb00bc.js",
+    "main.css": "/profiles/static/css/main.a86172df.css",
+    "main.js": "/profiles/static/js/main.e7d62692.js",
     "static/js/787.f2a0fa2f.chunk.js": "/profiles/static/js/787.f2a0fa2f.chunk.js",
     "static/media/user.png": "/profiles/static/media/user.23cc76c60dd45c158b45.png",
     "index.html": "/profiles/index.html",
-    "static/media/Tailwind_CSS_Logo.svg": "/profiles/static/media/Tailwind_CSS_Logo.fa33f4e8e025e5e800a2b8938c449152.svg",
-    "static/media/React-icon.svg": "/profiles/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.a6497ee6.css.map": "/profiles/static/css/main.a6497ee6.css.map",
-    "main.8acb00bc.js.map": "/profiles/static/js/main.8acb00bc.js.map",
+    "static/media/Tailwind_CSS_Logo.svg": "/profiles/static/media/Tailwind_CSS_Logo.319cd2de1897d256a7ea121fc862155d.svg",
+    "static/media/React-icon.svg": "/profiles/static/media/React-icon.3a03708e42481565259f85329d20b695.svg",
+    "main.a86172df.css.map": "/profiles/static/css/main.a86172df.css.map",
+    "main.e7d62692.js.map": "/profiles/static/js/main.e7d62692.js.map",
     "787.f2a0fa2f.chunk.js.map": "/profiles/static/js/787.f2a0fa2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6497ee6.css",
-    "static/js/main.8acb00bc.js"
+    "static/css/main.a86172df.css",
+    "static/js/main.e7d62692.js"
   ]
 }
