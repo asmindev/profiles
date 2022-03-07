@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-scroll'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const banner = {
@@ -12,7 +12,7 @@ export default function Home() {
         bounce: 0,
       },
     },
-  }
+  };
   const letterAnimation = {
     initial: {
       y: 10,
@@ -27,7 +27,7 @@ export default function Home() {
         bounce: 0,
       },
     },
-  }
+  };
   return (
     <div className="w-full h-full dark:text-slate-50 text-slate-800 smooth">
       <div className="relative w-full h-full">
@@ -97,11 +97,11 @@ export default function Home() {
               <motion.div
                 initial={{ y: 40 }}
                 whileInView={{
-                y: 0,
-                transition: {
-                  duration: Infinity,
-                }
-              }}
+                  y: 0,
+                  transition: {
+                    duration: Infinity,
+                  },
+                }}
               >
                 <motion.button
                   variants={letterAnimation}
@@ -117,5 +117,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
