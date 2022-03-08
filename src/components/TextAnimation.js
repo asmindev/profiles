@@ -1,8 +1,8 @@
-  import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 function TextAnimation({ text }) {
-  const text2arr = Array.from(text)
+  const text2arr = Array.from(text);
   const banner = {
     animate: {
       transition: {
@@ -12,7 +12,7 @@ function TextAnimation({ text }) {
         duration: 1,
       },
     },
-  }
+  };
   const letterAnimation = {
     initial: {
       y: 40,
@@ -24,7 +24,7 @@ function TextAnimation({ text }) {
         duration: 1,
       },
     },
-  }
+  };
   return (
     <motion.div
       className="w-fit mx-auto text-center"
@@ -33,16 +33,18 @@ function TextAnimation({ text }) {
       variants={banner}
     >
       <div className="overflow-hidden">
-        {text2arr.map((word) => (
+        {text2arr.map((word, index) => (
           <motion.span
-            className="inline-block font-black text-4xl"
+            // eslint-disable-next-line react/no-array-index-key
+            key={index}
+            className="inline-block"
             variants={letterAnimation}
           >
             {word}
           </motion.span>
-))}
+        ))}
       </div>
     </motion.div>
-  )
+  );
 }
- export default TextAnimation
+export default TextAnimation;

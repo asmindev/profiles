@@ -39,7 +39,7 @@ function Skill() {
       >
         <div className="w-fit mx-auto">
           <div className="px-2">
-            <div className="flex gap-2 text-slate-800 dark:text-slate-50 smooth">
+            <div className="text-2xl font-black flex gap-2 text-slate-800 dark:text-slate-50 smooth">
               <TextAnimation text="Skill" />
             </div>
           </div>
@@ -51,14 +51,14 @@ function Skill() {
             />
           </div>
         </div>
-        <div className="w-full mx-auto mt-8 flex flex-wrap px-4">
+        <div className="w-full mx-auto mt-8 flex flex-wrap px-4 justify-center">
           <div className="text-slate-700 dark:text-slate-100 smooth">
             <p className="text-justify lg:text-center text-base mb-8">
               I'm honing my Front-End skills from mid 2021 Until now. I have
               experience but but I'm no expert. I really enjoy learning:
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 lg:w-1/3">
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
@@ -108,7 +108,7 @@ function Skill() {
               </motion.div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className=" lg:w-1/3">
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
@@ -130,7 +130,7 @@ function Skill() {
               </motion.div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className=" lg:w-1/3">
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
@@ -141,7 +141,7 @@ function Skill() {
               </motion.div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className=" lg:w-1/3">
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}

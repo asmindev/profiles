@@ -22,7 +22,7 @@ function About() {
           whileInView={{
             transition: { duration: 0.5, delay: 0.5 },
           }}
-          className="w-1/2 mx-auto mt-10 overflow-hidden rounded-md"
+          className="w-11/12 lg:w-1/2 mx-auto mt-10 overflow-hidden rounded-md"
         >
           <motion.img
             className="rounded-md w-full"
@@ -47,7 +47,7 @@ function About() {
         <div className="w-fit mt-12 lg:pl-14 lg:flex items-center justify-center">
           <div className="">
             <div className="overflow-hidden">
-              <div className="lg:mx-0 flex w-fit gap-2 mx-auto text-slate-800 dark:text-slate-50 smooth">
+              <div className="lg:mx-0 text-2xl font-black flex w-fit gap-2 mx-auto text-slate-800 dark:text-slate-50 smooth">
                 <TextAnimation text="About" />
                 <TextAnimation text="Me" />
               </div>
