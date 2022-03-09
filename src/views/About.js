@@ -15,20 +15,20 @@ function About() {
     return age;
   }
   return (
-    <div className="px-4 w-full lg:w-9/12 mx-auto flex justify-center">
+    <div className="px-4 w-full lg:w-8/12 mx-auto flex justify-center">
       <motion.div className="flex flex-col lg:flex-row justify-center">
         <motion.div
           initial={{ borderRadius: 0 }}
           whileInView={{
+            borderRadius: '2%',
             transition: { duration: 0.5, delay: 0.5 },
           }}
-          className="w-11/12 lg:w-1/2 mx-auto mt-10 overflow-hidden rounded-md"
+          className="w-11/12 lg:w-1/2 mx-auto mt-10 overflow-hidden rounded bg-transparent"
         >
           <motion.img
-            className="rounded-md w-full"
+            className="w-full"
             initial={{
-              scale: 1,
-              opacity: 1,
+              opacity: 9,
               y: 300,
             }}
             whileInView={{
@@ -38,7 +38,12 @@ function About() {
             }}
             whileHover={{
               scale: 1.1,
-              transition: { duration: 0.6, ease: [0.6, 0.1, -0.05, 0.9] },
+              transition: {
+                type: 'spring',
+                duration: 0.6,
+                ease: [0.6, 0.1, -0.05, 0.9],
+                bounce: 0,
+              },
             }}
             src={Image}
             alt="User alt"
@@ -56,7 +61,7 @@ function About() {
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: '100%', transition: { duration: 1 } }}
-                className="bg-indigo-500 rounded h-1 mx-auto"
+                className="bg-indigo-500 rounded h-[4px] mx-auto"
               />
             </div>
             <motion.div

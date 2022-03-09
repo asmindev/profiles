@@ -4,6 +4,8 @@ import { ViewGridIcon as ViewGridIconSolid } from '@heroicons/react/solid';
 import Home from './views/Home-Mo';
 import About from './views/About';
 import Skill from './views/Skill';
+import Footer from './views/Footer';
+// import ImageSlider from './views/ImageSlider';
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -30,12 +32,18 @@ function App() {
         <div className="w-full h-screen">
           <Home />
         </div>
-        <div id="about" className="w-full h-screen md:h-auto">
+        <div id="about" className="w-full">
           <About />
         </div>
-        <div id="skill" className="w-full h-screen md:h-auto">
+        <div id="skill" className="w-full mt-24">
           <Skill />
         </div>
+        <div id="footer" className="w-full mt-24">
+          <Footer />
+        </div>
+        {/* <div id="footer" className="w-full mt-24">
+          <ImageSlider />
+        </div> */}
       </div>
     </div>
   );
