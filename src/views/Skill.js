@@ -40,14 +40,14 @@ function Skill() {
         <div className="w-fit mx-auto">
           <div className="px-2">
             <div className="text-2xl font-black flex gap-2 text-slate-800 dark:text-slate-50 smooth">
-              <TextAnimation text="Skill" />
+              <TextAnimation text="Skills" />
             </div>
           </div>
           <div className="w-full mx-auto">
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: '100%', transition: { duration: 1 } }}
-              className="bg-indigo-500 rounded h-[3px]"
+              className="bg-indigo-500 h-[2px]"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ function Skill() {
               >
                 <div className="w-fit mx-auto">
                   <svg
-                    className="h-28"
+                    className="h-28 translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
                     viewBox="0 0 256 255"
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="xMinYMin meet"
@@ -104,7 +104,7 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                <h1 className="mt-8 text-center -translate-y-[25%] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  smooth">
                   Python
                 </h1>
               </motion.div>
@@ -118,7 +118,7 @@ function Skill() {
               >
                 <div className="w-fit mx-auto">
                   <svg
-                    className="h-28 w-full"
+                    className="h-28 w-full translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
                     viewBox="0 0 256 256"
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="xMinYMin meet"
@@ -128,7 +128,7 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                <h1 className="mt-8 text-center -translate-y-[25%] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  smooth">
                   Javascript
                 </h1>
               </motion.div>
@@ -142,7 +142,7 @@ function Skill() {
               >
                 <div className="w-fit mx-auto">
                   <svg
-                    className="h-28 w-full"
+                    className="h-28 w-full translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
                     xmlns="http://www.w3.org/2000/svg"
                     enableBackground="new 0 0 2249 2249"
                     viewBox="0 0 2249 2249"
@@ -190,7 +190,7 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                <h1 className="mt-8 text-center -translate-y-[25%] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  smooth">
                   NodeJS
                 </h1>
               </motion.div>
@@ -202,8 +202,11 @@ function Skill() {
                 variants={letterAnimation}
                 className="group p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
-                <motion.img src={ReactLogo} className="w-full h-28" />
-                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                <motion.img
+                  src={ReactLogo}
+                  className="w-full h-28 translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
+                />
+                <h1 className="mt-8 text-center -translate-y-[25%] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  smooth">
                   ReactJs
                 </h1>
               </motion.div>
@@ -217,7 +220,7 @@ function Skill() {
               >
                 <div className="w-fit mx-auto">
                   <svg
-                    className="h-28 w-full"
+                    className="h-28 w-full  translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
                     viewBox="0 0 261.76 226.69"
@@ -239,7 +242,7 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                <h1 className="mt-8 text-center -translate-y-[25%] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  smooth">
                   VueJS
                 </h1>
               </motion.div>
@@ -251,7 +254,10 @@ function Skill() {
                 variants={letterAnimation}
                 className="group p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
-                <motion.img src={Tailwind} className="w-full h-28" />
+                <motion.img
+                  src={Tailwind}
+                  className="w-full h-28 translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
+                />
                 <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
                   TailwindCSS
                 </h1>

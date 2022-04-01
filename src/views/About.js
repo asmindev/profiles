@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import TextAnimation from '../components/TextAnimation';
-import Image from '../assets/img/user.png';
+import Image from '../assets/img/asmin.png';
 
 function About() {
   function getAge(dateString) {
@@ -15,41 +15,21 @@ function About() {
     return age;
   }
   return (
-    <div className="px-4 w-full lg:w-8/12 mx-auto flex justify-center">
-      <motion.div className="flex flex-col lg:flex-row justify-center">
-        <motion.div
-          initial={{ borderRadius: 0 }}
-          whileInView={{
-            borderRadius: '2%',
-            transition: { duration: 0.5, delay: 0.5 },
-          }}
-          className="w-11/12 lg:w-1/2 mx-auto mt-10 overflow-hidden rounded bg-transparent"
-        >
-          <motion.img
-            className="w-full"
-            initial={{
-              opacity: 9,
-              y: 300,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.5 },
-            }}
-            whileHover={{
-              scale: 1.1,
-              transition: {
-                type: 'spring',
-                duration: 0.6,
-                ease: [0.6, 0.1, -0.05, 0.9],
-                bounce: 0,
-              },
-            }}
-            src={Image}
-            alt="User alt"
-          />
-        </motion.div>
-        <div className="w-fit mt-12 lg:pl-14 lg:flex items-center justify-center">
+    <div className="w-full lg:w-8/12 mx-auto flex justify-center">
+      <div className="flex flex-col lg:flex-row justify-center">
+        <div className="w-full relative lg:w-8/12 mx-auto mt-10 overflow-hidden rounded bg-transparent -translate-y-20">
+          <img className="w-[200%]" src={Image} alt="User alt" />
+          <span className="absolute -z-10 -bottom-16 block w-full">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#8A3FFC"
+                d="M54.2,-60.8C68.9,-52.2,78.5,-33.9,82.4,-14.2C86.3,5.5,84.4,26.6,74.4,42.2C64.5,57.9,46.6,68.3,28.3,72.8C10,77.3,-8.6,76,-26.4,70.5C-44.3,64.9,-61.4,55.1,-72.9,39.8C-84.5,24.5,-90.6,3.7,-85.3,-13C-79.9,-29.8,-63.2,-42.6,-47.1,-50.9C-31,-59.2,-15.5,-63,2.1,-65.5C19.7,-68.1,39.5,-69.3,54.2,-60.8Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+          </span>
+        </div>
+        <div className="px-4 w-fit lg:pl-14 lg:flex items-center justify-center">
           <div className="">
             <div className="overflow-hidden">
               <div className="lg:mx-0 text-2xl font-black flex w-fit gap-2 mx-auto text-slate-800 dark:text-slate-50 smooth">
@@ -61,7 +41,7 @@ function About() {
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: '100%', transition: { duration: 1 } }}
-                className="bg-indigo-500 rounded h-[2px] mx-auto"
+                className="bg-indigo-500 h-[2px] mx-auto"
               />
             </div>
             <motion.div
@@ -88,19 +68,14 @@ function About() {
                   Asmin
                 </a>
                 , {getAge('09/10/2001')} years old. Student at Haluoleo
-                University, majoring in Informatics Engineering. I was born at
-                10 September 2001. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Porro hic a nam perspiciatis alias. Modi
-                veritatis architecto inventore error perferendis pariatur
-                repellendus, maxime quibusdam vitae velit assumenda! Fugit
-                minima praesentium, cumque quas quia itaque velit magni ex nemo
-                pariatur asperiores, alias ad placeat nisi? Cupiditate pariatur
-                ea dolor eius corrupti!
+                University, majoring in Informatics Engineering. I really like
+                to learn new things about technology, especially about web
+                programming
               </p>
             </motion.div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
