@@ -40,14 +40,14 @@ function Skill() {
         <div className="w-fit mx-auto">
           <div className="px-2">
             <div className="text-2xl font-black flex gap-2 text-slate-800 dark:text-slate-50 smooth">
-              <TextAnimation text="Skill" />
+              <TextAnimation text="Skills" />
             </div>
           </div>
           <div className="w-full mx-auto">
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: '100%', transition: { duration: 1 } }}
-              className="bg-indigo-500 rounded h-[4px]"
+              className="bg-indigo-500 h-[2px]"
             />
           </div>
         </div>

@@ -9,7 +9,6 @@
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "autoprefixer": "^10.4.2",
-    "countapi-js": "^1.0.2",
     "framer-motion": "^6.2.8",
     "gh-pages": "^3.2.3",
     "postcss": "^8.4.7",

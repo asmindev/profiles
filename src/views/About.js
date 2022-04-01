@@ -15,7 +15,7 @@ function About() {
     return age;
   }
   return (
-    <div className="px-4 w-full lg:w-8/12 mx-auto flex justify-center">
+    <div className="px-4 w-full lg:w-8/12 mx-auto flex justify-center bg-gray-100/25 dark:bg-gray-800/50 shadow">
       <motion.div className="flex flex-col lg:flex-row justify-center">
         <motion.div
           initial={{ borderRadius: 0 }}
@@ -23,7 +23,7 @@ function About() {
             borderRadius: '2%',
             transition: { duration: 0.5, delay: 0.5 },
           }}
-          className="w-11/12 lg:w-1/2 mx-auto mt-10 overflow-hidden rounded bg-transparent"
+          className="w-10/12 lg:w-1/2 mx-auto mt-10 overflow-hidden rounded bg-transparent"
         >
           <motion.img
             className="w-full"
@@ -61,7 +61,7 @@ function About() {
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: '100%', transition: { duration: 1 } }}
-                className="bg-indigo-500 rounded h-[4px] mx-auto"
+                className="bg-indigo-500 h-[2px] mx-auto"
               />
             </div>
             <motion.div
@@ -88,8 +88,7 @@ function About() {
                   Asmin
                 </a>
                 , {getAge('09/10/2001')} years old. Student at Haluoleo
-                University, majoring in Informatics Engineering. I was born at
-                10 September 2001
+                University, majoring in Informatics Engineering. I really like to learn new things about technology, especially about web programming
               </p>
             </motion.div>
           </div>

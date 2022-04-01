@@ -29,21 +29,24 @@ function App() {
             <ViewGridIcon className="w-7" />
           )}
         </button>
-        <div className="w-full h-screen">
-          <Home />
-        </div>
-        <div id="about" className="w-full">
-          <About />
-        </div>
-        <div id="skill" className="w-full mt-24">
-          <Skill />
+        <div className="px-4 lg:px-0">
+
+          <div className="w-full h-screen">
+            <Home />
+          </div>
+          <div id="about" className="w-full">
+            <About />
+          </div>
+          <div id="skill" className="w-full mt-36">
+            <Skill />
+          </div>
+          {/* <div id="footer" className="w-full mt-24">
+          <ImageSlider />
+        </div> */}
         </div>
         <div id="footer" className="w-full mt-24">
           <Footer />
         </div>
-        {/* <div id="footer" className="w-full mt-24">
-          <ImageSlider />
-        </div> */}
       </div>
     </div>
   );
