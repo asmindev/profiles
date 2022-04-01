@@ -47,7 +47,7 @@ function Skill() {
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: '100%', transition: { duration: 1 } }}
-              className="bg-indigo-500 rounded h-[4px]"
+              className="bg-indigo-500 rounded h-[3px]"
             />
           </div>
         </div>
@@ -62,7 +62,7 @@ function Skill() {
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
-                className="p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
+                className="group p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
                 <div className="w-fit mx-auto">
                   <svg
@@ -104,7 +104,9 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center">Python</h1>
+                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                  Python
+                </h1>
               </motion.div>
             </div>
           </div>
@@ -112,7 +114,7 @@ function Skill() {
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
-                className="p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
+                className="group p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
                 <div className="w-fit mx-auto">
                   <svg
@@ -126,7 +128,9 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center">Javascript</h1>
+                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                  Javascript
+                </h1>
               </motion.div>
             </div>
           </div>
@@ -134,7 +138,7 @@ function Skill() {
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
-                className="p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
+                className="group p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
                 <div className="w-fit mx-auto">
                   <svg
@@ -186,7 +190,9 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center">NodeJS</h1>
+                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                  NodeJS
+                </h1>
               </motion.div>
             </div>
           </div>
@@ -194,10 +200,12 @@ function Skill() {
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
-                className="p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
+                className="group p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
                 <motion.img src={ReactLogo} className="w-full h-28" />
-                <h1 className="mt-8 text-center">ReactJs</h1>
+                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                  ReactJs
+                </h1>
               </motion.div>
             </div>
           </div>
@@ -205,7 +213,7 @@ function Skill() {
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
-                className="p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
+                className="group p-4 w-full mx-auto shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
                 <div className="w-fit mx-auto">
                   <svg
@@ -231,7 +239,9 @@ function Skill() {
                   </svg>
                 </div>
 
-                <h1 className="mt-8 text-center">VueJS</h1>
+                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                  VueJS
+                </h1>
               </motion.div>
             </div>
           </div>
@@ -239,10 +249,12 @@ function Skill() {
             <div className="p-2 overflow-hidden">
               <motion.div
                 variants={letterAnimation}
-                className="p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
+                className="group p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
                 <motion.img src={Tailwind} className="w-full h-28" />
-                <h1 className="mt-8 text-center">TailwindCSS</h1>
+                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                  TailwindCSS
+                </h1>
               </motion.div>
             </div>
           </div>

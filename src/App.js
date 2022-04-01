@@ -16,7 +16,6 @@ function App() {
       html.remove('dark');
     } else {
       html.add('dark');
-      setIsDark(!isDark);
     }
   };
   return (

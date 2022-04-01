@@ -61,7 +61,7 @@ function About() {
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: '100%', transition: { duration: 1 } }}
-                className="bg-indigo-500 rounded h-[4px] mx-auto"
+                className="bg-indigo-500 rounded h-[2px] mx-auto"
               />
             </div>
             <motion.div
@@ -89,7 +89,13 @@ function About() {
                 </a>
                 , {getAge('09/10/2001')} years old. Student at Haluoleo
                 University, majoring in Informatics Engineering. I was born at
-                10 September 2001
+                10 September 2001. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Porro hic a nam perspiciatis alias. Modi
+                veritatis architecto inventore error perferendis pariatur
+                repellendus, maxime quibusdam vitae velit assumenda! Fugit
+                minima praesentium, cumque quas quia itaque velit magni ex nemo
+                pariatur asperiores, alias ad placeat nisi? Cupiditate pariatur
+                ea dolor eius corrupti!
               </p>
             </motion.div>
           </div>
