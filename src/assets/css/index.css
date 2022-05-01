@@ -7,3 +7,6 @@
     @apply transition-all duration-500
   }
 }
+* {
+   -webkit-tap-highlight-color: transparent;
+ }

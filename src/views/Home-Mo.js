@@ -24,7 +24,6 @@ export default function Home() {
       transitions: {
         ease: 'easeInOut',
         duration: 1,
-        bounce: 0,
       },
     },
   };

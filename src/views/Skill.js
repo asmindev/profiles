@@ -53,9 +53,9 @@ function Skill() {
         </div>
         <div className="w-full mx-auto mt-8 flex flex-wrap px-4 justify-center">
           <div className="text-slate-700 dark:text-slate-100 smooth">
-            <p className="text-justify lg:text-center text-base mb-8">
+            <p className="font-montserrat text-justify lg:text-center text-base mb-8">
               I'm honing my Front-End skills from mid 2021 Until now. I have
-              experience but but I'm no expert. I really enjoy learning:
+              experience but but I'm no expert. I really enjoy learning
             </p>
           </div>
           <div className="w-1/2 lg:w-1/3">
@@ -202,6 +202,7 @@ function Skill() {
                 variants={letterAnimation}
                 className="group p-4 shadow rounded border border-gray-200 dark:bg-slate-700 dark:border-slate-500 smooth"
               >
+
                 <motion.img
                   src={ReactLogo}
                   className="w-full h-28 translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
@@ -258,7 +259,7 @@ function Skill() {
                   src={Tailwind}
                   className="w-full h-28 translate-y-[25%] filter grayscale group-hover:grayscale-0 group-hover:translate-y-0 smooth"
                 />
-                <h1 className="mt-8 text-center opacity-0 group-hover:opacity-100 smooth">
+                <h1 className="mt-8 text-center -translate-y-[25%] opacity-0 group-hover:opacity-100 group-hover:translate-y-0  smooth">
                   TailwindCSS
                 </h1>
               </motion.div>
