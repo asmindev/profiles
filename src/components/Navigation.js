@@ -55,7 +55,7 @@ export default function Navigation() {
           isOpen
             ? 'scale-100 opacity-100'
             : 'scale-0 ease-in-out opacity-0 lg:scale-100 lg:opacity-100'
-        } mt-1 ml-2 absolute py-4 px-6 bg-white/50 backdrop-blur-lg rounded-2xl w-1/2 z-10 transition-all duration-300 shadow lg:shadow-none lg:top-2 lg:right-4 lg:w-max lg:p-0 lg:bg-white/0`}
+        } mt-1 ml-2 absolute py-4 px-6 bg-white/70 backdrop-blur-lg rounded-2xl w-1/2 z-10 transition-all duration-300 shadow lg:shadow-none lg:top-2 lg:right-4 lg:w-max lg:p-0 lg:bg-white/0`}
       >
         <ul className="flex w-full justify-end flex-col lg:flex-row gap-[5px] lg:gap-10">
           {urls.map((url) => (
@@ -66,7 +66,7 @@ export default function Navigation() {
                 activeClass="text-teal-500 border-l-2 lg:border-b-2 border-teal-500"
                 spy
                 smooth
-                offset={url.path === 'about' ? 0 : -50}
+                offset={-30}
                 duration={700}
                 className="text-gray-800 py-1 px-2 w-full block lg:border-none"
               >

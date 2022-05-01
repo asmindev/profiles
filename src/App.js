@@ -17,10 +17,10 @@ function App() {
           <div id="home" className="w-full h-screen">
             <Home />
           </div>
-          <div id="about" className="w-full">
+          <div id="about" className="pt-2 w-full mt-24">
             <About />
           </div>
-          <div id="skill" className="w-full mt-36">
+          <div id="skill" className="pt-4 w-full mt-40">
             <Skill />
           </div>
         </div>
