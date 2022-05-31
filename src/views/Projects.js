@@ -44,7 +44,7 @@ export default function Projects() {
                 <div className="rounded-xl overflow-hidden">
                   <div className="relative w-full h-72 object-fill">
                     <img src="https://api.pikwy.com/web/6296018381ebe86bf345e459.jpg" alt="project pic" className="w-full h-full absolute z-10 object-cover" />
-                    <div className="w-full absolute h-full z-10 bg-gradient-to-t from-black to-transparent opacity-80" />
+                    <div className="w-full absolute bottom-0 h-1/2 z-10 bg-gradient-to-t from-black to-transparent opacity-70" />
                     <div className="p-2 absolute z-10 bottom-4 text-gray-50">
                       <div className="flex flex-col">
                         <h3 className="first-letter:uppercase font-bold text-xl">
