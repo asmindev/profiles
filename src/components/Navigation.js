@@ -75,7 +75,7 @@ export default function Navigation() {
           isOpen
             ? 'scale-100 opacity-100'
             : 'scale-0 ease-in-out opacity-0 lg:scale-100 lg:opacity-100'
-        } mt-1 ml-2 absolute py-4 px-6 bg-white/70 backdrop-blur-lg rounded-2xl w-1/2 z-10 transition-all duration-300 shadow lg:shadow-none lg:top-2 lg:right-4 lg:w-max lg:p-0 lg:bg-white/0 dark:bg-gray-800/50 smooth`}
+        } mt-1 ml-2 absolute py-4 px-6 bg-white/80 backdrop-blur-xl rounded-2xl w-1/2 z-10 transition-all duration-300 shadow lg:shadow-none lg:top-2 lg:right-4 lg:w-max lg:p-0 lg:bg-white/0 dark:bg-gray-800/80 smooth`}
       >
         <ul className="flex w-full justify-end flex-col lg:flex-row gap-[5px] lg:gap-10">
           {urls.map((url) => (
