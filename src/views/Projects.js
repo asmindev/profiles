@@ -4,13 +4,12 @@ import axios from 'axios'
 export default function Projects() {
   const [projects, setProjects] = useState([])
   const fetchRepos = async (repos) => {
-    const token = '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'
+    // const token = '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'
     const response = await axios.get(
       `https://api.github.com/repos/asmindev/${repos}`,
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `token ${token}`,
         },
       }
       // push to projects array
