@@ -23,7 +23,7 @@ export default function Projects() {
     repos.map((repo) => fetchRepos(repo))
   }, [])
   return (
-    <div className="w-full h-full">
+    <div className="w-full lg:w-8/12 mx-auto flex flex-col justify-center">
       <div className="w-11/12 mx-auto my-4">
         <h1 className="text-3xl font-bold text-center mb-4">Projects</h1>
         <span>
