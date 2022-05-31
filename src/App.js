@@ -4,6 +4,7 @@ import Home from './views/Home-Mo';
 import About from './views/About';
 import Skill from './views/Skill';
 import Footer from './views/Footer';
+import Projects from './views/Projects';
 
 function App() {
   return (
@@ -13,15 +14,17 @@ function App() {
           <Navigation />
         </div>
         <div className="px-4 lg:px-0">
-
           <div id="home" className="w-full h-screen">
             <Home />
           </div>
-          <div id="about" className="pt-2 w-full mt-24">
+          <div id="about" className="pt-2 w-full mt-16">
             <About />
           </div>
           <div id="skill" className="pt-4 w-full mt-40">
             <Skill />
+          </div>
+          <div id="projects" className="pt-4 w-full mt-40">
+            <Projects />
           </div>
         </div>
         <div id="footer" className="w-full mt-24">
