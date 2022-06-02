@@ -1,12 +1,12 @@
 // Hambuger Menu
-import React, { useState } from 'react'
-import { ViewGridIcon } from '@heroicons/react/outline'
+import React, { useState } from 'react';
+import { ViewGridIcon } from '@heroicons/react/outline';
 import {
   ViewGridIcon as ViewGridIconSolid,
   MoonIcon,
   SunIcon,
-} from '@heroicons/react/solid'
-import { Link } from 'react-scroll'
+} from '@heroicons/react/solid';
+import { Link } from 'react-scroll';
 
 export default function Navigation() {
   const urls = [
@@ -25,17 +25,17 @@ export default function Navigation() {
       name: 'Skill',
       path: 'skill',
     },
-  ]
-  const [isOpen, setIsOpen] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  ];
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
   const theme = () => {
-    const root = document.querySelector('html')
-    root.classList.toggle('dark')
-    setIsDark(!isDark)
-  }
+    const root = document.querySelector('html');
+    root.classList.toggle('dark');
+    setIsDark(!isDark);
+  };
   return (
     <div className="w-full h-full text-slate-700 font-popins bg-white/50 backdrop-blur-lg dark:bg-gray-800/50 dark:text-gray-50 smooth">
-      <div className="flex p-4 h-full items-center justify-between relativ z-10">
+      <div className="flex p-4 h-full items-center justify-between relative z-10 lg:w-10/12 lg:pr-4">
         <div className="logo">
           <Link
             to="home"
@@ -47,17 +47,13 @@ export default function Navigation() {
             <h1 className="font-black">Zett</h1>
           </Link>
         </div>
-        <div className="flex items-center justify-end gap-4">
-          <button type="button" className="w-6 h-6" onClick={theme}>
+        <div className="flex items-center justify-end gap-4 lg:relative z-50">
+          <button type="button" className="w-6 h-6 lg:mr-4" onClick={theme}>
             {isDark ? (
-              <SunIcon
-                className="text-gray-300"
-              />
-          ) : (
-            <MoonIcon
-              className="text-gray-400"
-            />
-          )}
+              <SunIcon className="text-gray-300" />
+            ) : (
+              <MoonIcon className="text-gray-400" />
+            )}
           </button>
           <button
             className="w-6 h-6 lg:hidden"
@@ -69,13 +65,12 @@ export default function Navigation() {
           </button>
         </div>
       </div>
-
       <div
         className={`${
           isOpen
             ? 'scale-100 opacity-100'
             : 'scale-0 ease-in-out opacity-0 lg:scale-100 lg:opacity-100'
-        } mt-1 ml-2 absolute py-4 px-6 bg-white/80 backdrop-blur-xl rounded-2xl w-1/2 z-10 transition-all duration-300 shadow lg:shadow-none lg:top-2 lg:right-4 lg:w-max lg:p-0 lg:bg-white/0 dark:bg-gray-800/80 smooth`}
+        } mt-1 ml-2 absolute py-4 px-6 bg-white/80 backdrop-blur-xl rounded-2xl w-1/2 z-50 transition-all duration-300 shadow lg:shadow-none lg:top-1 lg:right-4 lg:w-max lg:p-0 lg:bg-trasnparent dark:bg-gray-800/80 smooth`}
       >
         <ul className="flex w-full justify-end flex-col lg:flex-row gap-[5px] lg:gap-10">
           {urls.map((url) => (
@@ -97,5 +92,5 @@ export default function Navigation() {
         </ul>
       </div>
     </div>
-  )
+  );
 }

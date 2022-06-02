@@ -17,7 +17,7 @@ function About() {
     <div className="w-full lg:w-8/12 mx-auto flex flex-col justify-center">
       <div>
         <div className="mt-12 lg:mx-0 w-full text-slate-800 dark:text-slate-50 smooth">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl font-bold lg:text-8xl">
             HI, I am{' '}
             <span className="before:block before:absolute before:bg-indigo-100 before:w-3/4 before:h-4 before:inset-5 before:-inset-x-1 before:dark:bg-indigo-600 relative inline-block smooth">
               <span className="relative text-indigo-600 dark:text-indigo-200">
