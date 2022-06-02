@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         popins: ['Poppins', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif']
+        montserrat: ['Montserrat', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif']
       },
       animation: {
         blob: 'blob 7s infinite'

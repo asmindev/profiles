@@ -1,47 +1,31 @@
-import React, { useState } from 'react';
-import { ViewGridIcon } from '@heroicons/react/outline';
-import { ViewGridIcon as ViewGridIconSolid } from '@heroicons/react/solid';
+import React from 'react';
+import Navigation from './components/Navigation'
 import Home from './views/Home-Mo';
 import About from './views/About';
 import Skill from './views/Skill';
 import Footer from './views/Footer';
-// import ImageSlider from './views/ImageSlider';
+import Projects from './views/Projects';
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
-  const themeToggle = () => {
-    const html = document.querySelector('html').classList;
-    if (html.contains('dark')) {
-      setIsDark(!isDark);
-      html.remove('dark');
-    } else {
-      html.add('dark');
-    }
-  };
   return (
     <div className="w-full flex font-popins overflow-hidden">
       <div className="w-full">
-        <button onClick={themeToggle} type="button" className="fixed z-50 m-4">
-          {isDark ? (
-            <ViewGridIconSolid className="w-7" />
-          ) : (
-            <ViewGridIcon className="w-7" />
-          )}
-        </button>
+        <div className="w-full h-12 fixed z-10">
+          <Navigation />
+        </div>
         <div className="px-4 lg:px-0">
-
-          <div className="w-full h-screen">
+          <div id="home" className="w-full h-screen">
             <Home />
           </div>
-          <div id="about" className="w-full">
+          <div id="about" className="pt-2 w-full mt-16">
             <About />
           </div>
-          <div id="skill" className="w-full mt-36">
+          <div id="skill" className="pt-4 w-full mt-40">
             <Skill />
           </div>
-          {/* <div id="footer" className="w-full mt-24">
-          <ImageSlider />
-        </div> */}
+          <div id="projects" className="pt-4 w-full mt-40">
+            <Projects />
+          </div>
         </div>
         <div id="footer" className="w-full mt-24">
           <Footer />
