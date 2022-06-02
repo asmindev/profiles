@@ -18,8 +18,12 @@ function About() {
     <div className="w-full lg:w-8/12 mx-auto flex justify-center">
       <div className="flex flex-col lg:flex-row justify-center">
         <div className="w-full relative lg:w-8/12 mx-auto mt-10 overflow-hidden rounded bg-transparent -translate-y-20">
-          <img className="w-[200%]" src={Image} alt="User alt" />
-          <span className="absolute -z-10 -bottom-16 block w-full">
+          <img
+            className="w-full lg:scale-150 object-top"
+            src={Image}
+            alt="User alt"
+          />
+          <span className="absolute -z-10 -bottom-20 block w-full">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill="#8A3FFC"
