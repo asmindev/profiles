@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  const fetchRepos = async (repos) => {
+  const [projects, setProjects] = useState([])
+  const fetchRepos = async (repo) => {
     // const token = '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'
     const response = await axios.get(
-      `https://api.github.com/repos/asmindev/${repos}`,
+      `https://api.github.com/repos/asmindev/${repo}`,
       {
         headers: {
           'Content-Type': 'application/json',
         },
       }
       // push to projects array
-    );
-    setProjects((oldProjects) => [...oldProjects, response.data]);
-    console.log(projects);
-  };
+    )
+    setProjects((oldProjects) => [...oldProjects, response.data])
+    console.log(projects)
+  }
   useEffect(() => {
-    const repos = ['profiles', 'crud-contacts'];
-    repos.map((repo) => fetchRepos(repo));
-  }, []);
+    const repos = ['profiles', 'crud-contacts', 'clone-baitussalamsyariah']
+    repos.map((repo) => fetchRepos(repo))
+  }, [])
   return (
     <div className="w-full lg:w-8/12 mx-auto flex flex-col justify-center">
       <div className="w-11/12 mx-auto my-4">
@@ -28,7 +28,7 @@ export default function Projects() {
         <span>
           <p className="font-montserrat text-justify lg:text-center text-base mb-8">
             I have worked on a few projects, some of which are listed below.
-            Click on the project to see the code on github.
+            Click on the project to see the details on github.
           </p>
         </span>
       </div>
@@ -41,16 +41,17 @@ export default function Projects() {
                 href={project.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="shadow-md"
               >
                 <div className="rounded-xl overflow-hidden">
                   <div className="relative w-full h-72 object-fill">
                     <img
                       src="https://api.pikwy.com/web/6296018381ebe86bf345e459.jpg"
                       alt="project pic"
-                      className="w-full h-full absolute z-10 object-cover"
+                      className="w-full h-full absolute object-cover hover:scale-110 smooth"
                     />
-                    <div className="w-full absolute bottom-0 h-1/2 z-10 bg-gradient-to-t from-black to-transparent opacity-70" />
-                    <div className="p-2 absolute z-10 bottom-4 text-gray-50">
+                    <div className="w-full absolute bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent opacity-70" />
+                    <div className="p-2 absolute z-[5] bottom-4 text-gray-50">
                       <div className="flex flex-col">
                         <h3 className="first-letter:uppercase font-bold text-xl">
                           {project.name}
@@ -67,5 +68,5 @@ export default function Projects() {
           ))}
       </div>
     </div>
-  );
+  )
 }

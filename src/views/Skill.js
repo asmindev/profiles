@@ -11,7 +11,7 @@ function Skill() {
         delayChildren: 0.8,
         staggerChildren: 0.15,
         duration: 4,
-      delay: 2,
+        delay: 2,
       },
     },
   }

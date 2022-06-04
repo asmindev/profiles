@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import Navigation from './components/Navigation'
-import Home from './views/Home-Mo';
-import About from './views/About';
-import Skill from './views/Skill';
-import Footer from './views/Footer';
-import Projects from './views/Projects';
+import Home from './views/Home-Mo'
+import About from './views/About'
+import Skill from './views/Skill'
+import Footer from './views/Footer'
+import Projects from './views/Projects'
 
 function App() {
   return (
@@ -32,6 +32,6 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-export default App;
+export default App

@@ -35,7 +35,7 @@ export default function Navigation() {
   };
   return (
     <div className="w-full h-full text-slate-700 font-popins bg-white/50 backdrop-blur-lg dark:bg-gray-800/50 dark:text-gray-50 smooth">
-      <div className="flex p-4 h-full items-center justify-between relative z-10 lg:w-10/12 lg:pr-4">
+      <div className="flex p-4 h-full items-center justify-between relative z-[99999] lg:w-10/12 lg:pr-4">
         <div className="logo">
           <Link
             to="home"
@@ -47,7 +47,7 @@ export default function Navigation() {
             <h1 className="font-black">Zett</h1>
           </Link>
         </div>
-        <div className="flex items-center justify-end gap-4 lg:relative z-50">
+        <div className="flex items-center justify-end gap-4 lg:relative z-[99999]">
           <button type="button" className="w-6 h-6 lg:mr-4" onClick={theme}>
             {isDark ? (
               <SunIcon className="text-gray-300" />

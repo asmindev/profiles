@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import { motion } from 'framer-motion';
+import React from 'react'
+import { Link } from 'react-scroll'
+import { motion } from 'framer-motion'
+import { ArrowDownIcon } from '@heroicons/react/solid'
 
 export default function Home() {
   const banner = {
@@ -12,7 +13,7 @@ export default function Home() {
         bounce: 0,
       },
     },
-  };
+  }
   const letterAnimation = {
     initial: {
       y: 10,
@@ -26,7 +27,7 @@ export default function Home() {
         duration: 1,
       },
     },
-  };
+  }
   return (
     <div className="w-full h-full dark:text-slate-50 text-slate-800 smooth">
       <div className="relative w-full h-full">
@@ -101,20 +102,21 @@ export default function Home() {
                     duration: Infinity,
                   },
                 }}
+                className="w-fit flex  gap-4 font-popins tracking-wider text-xs uppercase font-bold bg-indigo-500 text-white px-4 py-3 rounded-full"
               >
                 <motion.button
                   variants={letterAnimation}
                   whileTap={{ scale: 0.9 }}
                   whileHover={{ scale: 1.1 }}
-                  className="font-popins block tracking-wider text-xs uppercase font-bold bg-indigo-500 text-white px-4 py-3 rounded-full"
                 >
                   Scrool down
                 </motion.button>
+                <ArrowDownIcon className="w-4 h-4" />
               </motion.div>
             </Link>
           </motion.div>
         </div>
       </div>
     </div>
-  );
+  )
 }
