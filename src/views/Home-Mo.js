@@ -111,7 +111,7 @@ export default function Home() {
                 >
                   Scrool down
                 </motion.button>
-                <ArrowDownIcon className="w-4 h-4" />
+                <ArrowDownIcon className="w-4 h-4 animate-bounce" />
               </motion.div>
             </Link>
           </motion.div>
