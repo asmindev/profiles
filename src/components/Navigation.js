@@ -1,12 +1,12 @@
 // Hambuger Menu
-import React, { useState } from 'react';
-import { ViewGridIcon } from '@heroicons/react/outline';
+import React, { useState } from 'react'
+import { ViewGridIcon } from '@heroicons/react/outline'
 import {
   ViewGridIcon as ViewGridIconSolid,
   MoonIcon,
   SunIcon,
-} from '@heroicons/react/solid';
-import { Link } from 'react-scroll';
+} from '@heroicons/react/solid'
+import { Link } from 'react-scroll'
 
 export default function Navigation() {
   const urls = [
@@ -25,16 +25,18 @@ export default function Navigation() {
       name: 'Skill',
       path: 'skill',
     },
-  ];
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  ]
+  const [isOpen, setIsOpen] = useState(false)
+  const [isDark, setIsDark] = useState(false)
   const theme = () => {
-    const root = document.querySelector('html');
-    root.classList.toggle('dark');
-    setIsDark(!isDark);
-  };
+    const root = document.querySelector('html')
+    root.classList.toggle('dark')
+    setIsDark(!isDark)
+  }
   return (
-    <div className="w-full h-full text-slate-700 font-popins bg-white/50 backdrop-blur-lg dark:bg-gray-800/50 dark:text-gray-50 smooth">
+    <div
+      className="w-full h-full text-slate-700 font-popins bg-white/50 backdrop-blur-lg dark:bg-gray-800/50 dark:text-gray-50 smooth"
+    >
       <div className="flex p-4 h-full items-center justify-between relative z-[99999] lg:w-10/12 lg:pr-4">
         <div className="logo">
           <Link
@@ -48,12 +50,9 @@ export default function Navigation() {
           </Link>
         </div>
         <div className="flex items-center justify-end gap-4 lg:relative z-[99999]">
-          <button type="button" className="w-6 h-6 lg:mr-4" onClick={theme}>
-            {isDark ? (
-              <SunIcon className="text-gray-300" />
-            ) : (
-              <MoonIcon className="text-gray-400" />
-            )}
+          <button type="button" className="w-6 h-6 lg:mr-4 relative" onClick={theme}>
+            <SunIcon className={`${isDark ? 'opacity-0 rotate-45' : 'delay-100 rotate-0'} text-gray-800 duration-200 transition-all absolute top-0`} />
+            <MoonIcon className={`${isDark ? 'delay-100 rotate-0' : 'rotate-45 opacity-0'} text-white duration-100 transition-all absolute top-0`} />
           </button>
           <button
             className="w-6 h-6 lg:hidden"
@@ -92,5 +91,5 @@ export default function Navigation() {
         </ul>
       </div>
     </div>
-  );
+  )
 }
