@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -29,7 +29,7 @@
     />
     <title>Asmin Portfolio</title>
   </head>
-  <body class="dark:text-slate-50 dark:bg-gray-800 bg-white smooth">
+  <body class="w-full h-full bg-slate-800">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -48,7 +48,7 @@
       fetch(`https://api.countapi.xyz/hit/asmindev.github.io/counter`)
         .then((response) => response.json())
         .then((data) => {
-          document.getElementById('visits').innerHTML = `Views ${
+          document.getElementById('visits')?.innerHTML = `Views ${
             data?.value || 0
           }`
         })
