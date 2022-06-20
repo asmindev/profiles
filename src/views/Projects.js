@@ -1,71 +1,57 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 export default function Projects() {
-  const [projects, setProjects] = useState([])
-  const fetchRepos = async (repo) => {
-    // const token = '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'
-    const response = await axios.get(
-      `https://api.github.com/repos/asmindev/${repo}`,
-      {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      }
-      // push to projects array
-    )
-    setProjects((oldProjects) => [...oldProjects, response.data])
-    console.log(projects)
-  }
-  useEffect(() => {
-    const repos = ['profiles', 'crud-contacts', 'clone-baitussalamsyariah']
-    repos.map((repo) => fetchRepos(repo))
-  }, [])
   return (
-    <div className="w-full lg:w-8/12 mx-auto flex flex-col justify-center">
-      <div className="w-11/12 mx-auto my-4">
-        <h1 className="text-3xl font-bold text-center mb-4">Projects</h1>
-        <span>
-          <p className="font-montserrat text-justify lg:text-center text-base mb-8">
-            I have worked on a few projects, some of which are listed below.
-            Click on the project to see the details on github.
-          </p>
-        </span>
+    <div className="w-full h-full mt-12 p-4 container mx-auto">
+      <div className="">
+        <h1 className="text-4xl font-bold">Projects</h1>
+        <p className="border-b w-max pb-1">My recents project are listed below</p>
       </div>
-      <div className="projects w-full lg:flex flex-wrap justify-center lg:w-10/12 mx-auto">
-        {/* eslint-disable-next-line operator-linebreak */}
-        {projects &&
-          projects.map((project) => (
-            <div key={project.id} className="py-2 px-3 lg:w-1/2">
-              <a
-                href={project.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shadow-md"
-              >
-                <div className="rounded-xl overflow-hidden">
-                  <div className="relative w-full h-72 object-fill">
-                    <img
-                      src="https://api.pikwy.com/web/6296018381ebe86bf345e459.jpg"
-                      alt="project pic"
-                      className="w-full h-full absolute object-cover hover:scale-110 smooth"
-                    />
-                    <div className="w-full absolute bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent opacity-70" />
-                    <div className="p-2 absolute z-[5] bottom-4 text-gray-50">
-                      <div className="flex flex-col">
-                        <h3 className="first-letter:uppercase font-bold text-xl">
-                          {project.name}
-                        </h3>
-                        <p className="text-sm font-light text-gray-300">
-                          {project.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+      <div className="mt-4 w-full flex flex-col md:flex-row flex-wrap">
+        <div className="w-full md:w-1/2 py-6 md:py-0 md:p-4">
+          <div className="w-full flex flex-col lg:flex-row">
+            <div className="w-full overflow-hidden">
+              <Fade bottom>
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80"
+                  alt="Random "
+                />
+              </Fade>
             </div>
-          ))}
+
+            <div className="w-full mt-4 overflow-hidden">
+              <Fade bottom>
+                <h1 className="text-lg font-semibold">Quran App</h1>
+                <p className="text-gray-200 text-sm font-montserrat">
+                  This is a web app that I made to learn React. I used the API
+                  from the Quran API to get the data of the Quran.
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 py-6 md:py-0 md:p-4">
+          <div className="w-full flex flex-col lg:flex-row">
+            <div className="w-full overflow-hidden">
+              <Fade bottom>
+                <img
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="Random "
+                />
+              </Fade>
+            </div>
+
+            <div className="w-full mt-4 overflow-hidden">
+              <Fade bottom>
+                <h1 className="text-lg font-semibold">Clone Web</h1>
+                <p className="text-gray-200 text-sm font-montserrat">
+                  Build a clone of a website using Html and Tailwind CSS.
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

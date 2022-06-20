@@ -1,37 +1,36 @@
 import React from 'react'
-import Navigation from './components/Navigation'
-import Home from './views/Home-Mo'
+import Home from './views/Home'
 import About from './views/About'
 import Skill from './views/Skill'
 import Footer from './views/Footer'
 import Projects from './views/Projects'
+import Contact from './views/Contact'
+import Nav from './components/Nav'
 
 function App() {
   return (
-    <div className="w-full flex font-popins overflow-hidden">
-      <div className="w-full">
-        <div className="w-full h-12 fixed z-10">
-          <Navigation />
-        </div>
-        <div className="px-4 lg:px-0">
-          <div id="home" className="w-full h-screen">
-            <Home />
-          </div>
-          <div id="about" className="pt-2 w-full mt-16">
-            <About />
-          </div>
-          <div id="skill" className="pt-4 w-full mt-40">
-            <Skill />
-          </div>
-          <div id="projects" className="pt-4 w-full mt-40">
-            <Projects />
-          </div>
-        </div>
-        <div id="footer" className="w-full mt-24">
-          <Footer />
-        </div>
-      </div>
-    </div>
+    <main className="text-gray-50 font-popins w-full">
+      <Nav />
+      <section id="home" className="w-full">
+        <Home />
+      </section>
+      <section id="about" className="w-full">
+        <About />
+      </section>
+      <section id="skill" className="w-full bg-gray-700">
+        <Skill />
+      </section>
+      <section id="projects" className="w-full">
+        <Projects />
+      </section>
+      <section id="contact" className="w-full">
+        <Contact />
+      </section>
+      <section className="w-full">
+        <Footer />
+      </section>
+
+    </main>
   )
 }
 export default App
