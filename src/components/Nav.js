@@ -7,11 +7,11 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
   const urls = [
-    { name: 'Home', url: '#home' },
-    { name: 'About', url: '#about' },
-    { name: 'Skill', url: '#skill' },
-    { name: 'Projects', url: '#projects' },
-    { name: 'Contact', url: '#contact' },
+    { name: 'Home', url: '#home', id: 1 },
+    { name: 'About', url: '#about', id: 2 },
+    { name: 'Skill', url: '#skill', id: 3 },
+    { name: 'Projects', url: '#projects', id: 4 },
+    { name: 'Contact', url: '#contact', id: 5 },
   ]
   const onClick = () => {
     setIsOpen(!isOpen)
@@ -44,7 +44,7 @@ export default function Nav() {
             <button
               onClick={onClick}
               type="button"
-              className="relative text-white w-8 h-8 text-4xl lg:hidden"
+              className="relative text-white w-8 h-8 text-4xl lg:hidden outline-none"
             >
               <MenuAlt1Icon
                 className={`${
@@ -67,7 +67,7 @@ export default function Nav() {
         >
           <div className="w-full h-full flex justify-center items-center flex-col">
             {urls.map((url) => (
-              <Fade right when={isOpen}>
+              <Fade key={url.id} right when={isOpen}>
                 <a onClick={() => setIsOpen(!isOpen)} className="py-4 text-center w-full hover:bg-white hover:text-gray-800 smooth" href={url.url}>
                   {url.name}
                 </a>
