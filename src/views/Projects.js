@@ -3,14 +3,14 @@ import Fade from 'react-reveal/Fade'
 
 export default function Projects() {
   return (
-    <div className="w-full h-full mt-12 p-4 container mx-auto">
+    <div className="w-full h-full p-4 container mx-auto">
       <div className="">
         <h1 className="text-4xl font-bold">Projects</h1>
         <p className="border-b w-max pb-1">My recents project are listed below</p>
       </div>
       <div className="mt-4 w-full flex flex-col md:flex-row flex-wrap">
         <div className="w-full md:w-1/2 py-6 md:py-0 md:p-4">
-          <div className="w-full flex flex-col lg:flex-row">
+          <div className="w-full flex flex-col lg:flex-row lg:gap-4">
             <div className="w-full overflow-hidden">
               <Fade bottom>
                 <img
@@ -32,7 +32,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-full md:w-1/2 py-6 md:py-0 md:p-4">
-          <div className="w-full flex flex-col lg:flex-row">
+          <div className="w-full flex flex-col lg:flex-row lg:gap-4">
             <div className="w-full overflow-hidden">
               <Fade bottom>
                 <img

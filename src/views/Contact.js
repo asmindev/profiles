@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Fade from 'react-reveal/Fade'
 
 export default function Contact() {
   const [success, setSuccess] = useState(false)
@@ -29,7 +30,7 @@ export default function Contact() {
         form,
         'g6Za6QDbwJ9ufQFAt'
       )
-      toast.success('Email Sent!', {
+      toast.success('Email Sent, Thank you for contacting me!', {
         position: 'top-center',
         autoClose: 5000,
         closeOnClick: true,
@@ -40,6 +41,8 @@ export default function Contact() {
       })
       console.log(response)
       setSuccess(true)
+      // clear form
+      form.reset()
     } catch (error) {
       toast.error(error.text, {
         position: 'top-center',
@@ -58,11 +61,36 @@ export default function Contact() {
       console.log(success)
       setCaptcha(value)
     }
-    console.log('Captcha value:', captcha)
   }
+  const contacts = [
+    {
+      id: 1,
+      name: 'Email',
+      value: 'Asminmin477@gmail.com',
+      icon: 'mail-outline',
+    },
+    {
+      id: 2,
+      name: 'WhatsApp',
+      value: '+62 (812) 4287-3775',
+      icon: 'logo-whatsapp',
+    },
+    {
+      id: 3,
+      name: 'Phone',
+      value: '+62 (812) 4287-3775',
+      icon: 'call-outline',
+    },
+    {
+      id: 4,
+      name: 'Address',
+      value: 'Baubau, Sulawesi Tenggara',
+      icon: 'location-outline',
+    }
+  ]
 
   return (
-    <div className="bg-slate-700 py-4">
+    <div className="w-full">
       <div className="container mx-auto px-4">
         <div className="w-full">
           <h3 className="uppercase tracking-[0.5em] font-medium">
@@ -79,24 +107,21 @@ export default function Contact() {
             </div>
             <table className="table-auto w-full mt-7">
               <tbody className="text-gray-200">
-                <tr>
-                  <td className="flex gap-2">
-                    <span className="flex items-center text-white">
-                      <ion-icon name="mail-outline" />
-                    </span>
-                    Email
-                  </td>
-                  <td>Asminmin477@gmail.com</td>
-                </tr>
-                <tr>
-                  <td className="flex gap-2">
-                    <span className="flex items-center text-white">
-                      <ion-icon name="call-outline" />
-                    </span>
-                    Phone
-                  </td>
-                  <td>+62 81242873775</td>
-                </tr>
+                {contacts.map((contact) => (
+                  <tr key={contact.id}>
+                    <Fade left>
+                      <td className="flex gap-2">
+                        <span className="flex items-center text-white">
+                          <ion-icon name={contact.icon} />
+                        </span>
+                        {contact.name}
+                      </td>
+                    </Fade>
+                    <Fade right>
+                      <td>{contact.value}</td>
+                    </Fade>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -115,7 +140,8 @@ export default function Contact() {
                   </label>
                   <input
                     required
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    // className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="outline-none w-full py-2 border-b border-gray-400 focus:outline-none focus:border-gray-50 bg-transparent smooth"
                     id="grid-first-name"
                     type="text"
                     name="name"
@@ -132,7 +158,8 @@ export default function Contact() {
                   <input
                     name="email"
                     required
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    // className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="outline-none w-full py-2 border-b border-gray-400 focus:outline-none focus:border-gray-50 bg-transparent smooth"
                     id="grid-first-name"
                     type="email"
                     placeholder="Email"
@@ -148,7 +175,8 @@ export default function Contact() {
                   <textarea
                     required
                     name="message"
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    // className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="outline-none w-full py-2 border-b border-gray-400 focus:outline-none focus:border-gray-50 bg-transparent smooth"
                     id="messages"
                     type="text"
                     placeholder="Message"

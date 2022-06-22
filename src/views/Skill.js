@@ -4,7 +4,7 @@ import Slide from 'react-reveal/Slide'
 
 export default function Skill() {
   return (
-    <div className="w-full h-full mt-14 pt-20 p-4 container mx-auto text-justify">
+    <div className="w-full h-full p-4 container mx-auto text-justify">
       <div className="">
         <Slide bottom>
           <h1 className="text-4xl font-bold">What I Do</h1>

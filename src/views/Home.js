@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 export default function Home() {
   return (
     <section className="w-full h-full relative">
-      <div className="relative w-full bg-cover bg-bottom h-[100vh] md:h-[50vh] bg-[url(https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)] bg-no-repeat">
+      <div className="relative w-full bg-cover bg-bottom h-[100vh] bg-[url(https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)] bg-no-repeat">
         <div className="absolute w-full h-full bg-gradient-to-t from-slate-800 via-slate-800/50 opacity-75" />
       </div>
       <div className="absolute top-0 w-full h-full text-white flex items-center justify-center flex-col">

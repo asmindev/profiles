@@ -14,16 +14,16 @@ function App() {
       <section id="home" className="w-full">
         <Home />
       </section>
-      <section id="about" className="w-full">
+      <section id="about" className="w-full py-20">
         <About />
       </section>
-      <section id="skill" className="w-full bg-gray-700">
+      <section id="skill" className="w-full bg-gray-700 py-20">
         <Skill />
       </section>
-      <section id="projects" className="w-full">
+      <section id="projects" className="w-full py-20">
         <Projects />
       </section>
-      <section id="contact" className="w-full">
+      <section id="contact" className="w-full bg-gray-700 py-20">
         <Contact />
       </section>
       <section className="w-full">
