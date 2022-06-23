@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import emailjs from '@emailjs/browser'
-import ReCAPTCHA from 'react-google-recaptcha'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import Fade from 'react-reveal/Fade'
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Fade from 'react-reveal/Fade';
 
 export default function Contact() {
-  const [success, setSuccess] = useState(false)
-  const [captcha, setCaptcha] = useState('')
+  const [success, setSuccess] = useState(false);
+  const [captcha, setCaptcha] = useState('');
   const onSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (!captcha) {
       toast.warn('Please verify that you are not a robot.', {
         position: 'top-center',
@@ -19,17 +19,17 @@ export default function Contact() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      })
-      return
+      });
+      return;
     }
-    const form = e.target
+    const form = e.target;
     try {
       const response = await emailjs.sendForm(
         'service_2qc93pn',
         'template_8klonnk',
         form,
         'g6Za6QDbwJ9ufQFAt'
-      )
+      );
       toast.success('Email Sent, Thank you for contacting me!', {
         position: 'top-center',
         autoClose: 5000,
@@ -38,11 +38,11 @@ export default function Contact() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      })
-      console.log(response)
-      setSuccess(true)
+      });
+      console.log(response);
+      setSuccess(true);
       // clear form
-      form.reset()
+      form.reset();
     } catch (error) {
       toast.error(error.text, {
         position: 'top-center',
@@ -52,16 +52,16 @@ export default function Contact() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      })
-      setSuccess(false)
+      });
+      setSuccess(false);
     }
-  }
+  };
   const onChange = (value) => {
     if (value) {
-      console.log(success)
-      setCaptcha(value)
+      console.log(success);
+      setCaptcha(value);
     }
-  }
+  };
   const contacts = [
     {
       id: 1,
@@ -86,11 +86,11 @@ export default function Contact() {
       name: 'Address',
       value: 'Baubau, Sulawesi Tenggara',
       icon: 'location-outline',
-    }
-  ]
+    },
+  ];
 
   return (
-    <div className="w-full">
+    <div className="w-full container mx-auto lg:w-8/12">
       <div className="container mx-auto px-4">
         <div className="w-full">
           <h3 className="uppercase tracking-[0.5em] font-medium">
@@ -140,7 +140,6 @@ export default function Contact() {
                   </label>
                   <input
                     required
-                    // className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     className="outline-none w-full py-2 border-b border-gray-400 focus:outline-none focus:border-gray-50 bg-transparent smooth"
                     id="grid-first-name"
                     type="text"
@@ -158,7 +157,6 @@ export default function Contact() {
                   <input
                     name="email"
                     required
-                    // className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     className="outline-none w-full py-2 border-b border-gray-400 focus:outline-none focus:border-gray-50 bg-transparent smooth"
                     id="grid-first-name"
                     type="email"
@@ -175,17 +173,16 @@ export default function Contact() {
                   <textarea
                     required
                     name="message"
-                    // className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     className="outline-none w-full py-2 border-b border-gray-400 focus:outline-none focus:border-gray-50 bg-transparent smooth"
                     id="messages"
                     type="text"
                     placeholder="Message"
                   />
                 </div>
-                <div className="w-full mt-4 md:px-0 flex flex-col-reverse md:flex-row gap-2">
+                <div className="w-full mt-4 md:px-0 flex flex-col-reverse md:flex-row gap-2 items-center justify-between">
                   <button
                     type="submit"
-                    className="px-5 w-1/4 py-2 border rounded focus:bg-white focus:text-gray-800 transition-all duration-300"
+                    className="px-5 w-1/4 max-h-12 py-2 border rounded focus:bg-white focus:text-gray-800 transition-all duration-300"
                   >
                     Submit
                   </button>
@@ -204,5 +201,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-  )
+  );
 }

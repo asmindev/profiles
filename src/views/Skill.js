@@ -1,17 +1,17 @@
-import React from 'react'
-import Fade from 'react-reveal/Fade'
-import Slide from 'react-reveal/Slide'
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 export default function Skill() {
   return (
-    <div className="w-full h-full p-4 container mx-auto text-justify">
+    <div className="w-full h-full p-4 container mx-auto text-justify lg:w-8/12">
       <div className="">
         <Slide bottom>
-          <h1 className="text-4xl font-bold">What I Do</h1>
+          <h1 className="text-4xl font-bold my-6">What I Do</h1>
         </Slide>
       </div>
       <div className="w-full flex flex-col lg:flex-row flex-wrap">
-        <div className="w-full lg:w-1/2 py-6 lg:py-0 lg:p-4">
+        <div className="w-full lg:w-1/2 py-6 lg:px-4">
           <div className="w-full">
             <div className="w-full overflow-hidden">
               <Slide bottom>
@@ -35,7 +35,7 @@ export default function Skill() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 py-6 lg:py-0 lg:p-4">
+        <div className="w-full lg:w-1/2 py-6 lg:px-4">
           <div className="w-full">
             <div className="w-full overflow-hidden">
               <Slide bottom>
@@ -56,7 +56,7 @@ export default function Skill() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 py-6 lg:py-0 lg:p-4">
+        <div className="w-full lg:w-1/2 py-6 lg:px-4">
           <div className="w-full">
             <div className="w-full overflow-hidden">
               <Slide bottom>
@@ -69,14 +69,14 @@ export default function Skill() {
             <div className="mt-4 overflow-hidden">
               <Fade bottom>
                 <p className="text-gray-200 text-sm leading-[1.8] font-montserrat">
-                  I am a good to debug and fix your project. Find
-                  the best solution and apply it to your project.
+                  I am a good to debug and fix your project. Find the best
+                  solution and apply it to your project.
                 </p>
               </Fade>
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 py-6 lg:py-0 lg:p-4">
+        <div className="w-full lg:w-1/2 py-6 lg:px-4">
           <div className="w-full">
             <div className="w-full overflow-hidden">
               <Slide bottom>
@@ -89,7 +89,8 @@ export default function Skill() {
             <div className="mt-4 overflow-hidden">
               <Fade bottom>
                 <p className="text-gray-200 text-sm leading-[1.8] font-montserrat">
-                  Besides that, i am also a good to edit your photo with Lightroom.
+                  Besides that, i am also a good to edit your photo with
+                  Lightroom.
                 </p>
               </Fade>
             </div>
@@ -97,5 +98,5 @@ export default function Skill() {
         </div>
       </div>
     </div>
-  )
+  );
 }

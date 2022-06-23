@@ -1,10 +1,10 @@
-import React from 'react'
-import Fade from 'react-reveal/Fade'
-import User from '../assets/img/asmin.png (2)'
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import User from '../assets/img/asmin.png (2)';
 
 export default function About() {
   return (
-    <div className="w-full h-full p-4 container mx-auto">
+    <div className="w-full h-full p-4 container mx-auto lg:w-8/12">
       <div className="w-full md:flex gap-2">
         <div className="w-full md:w-1/2 md:p-4">
           <div className="w-full h-full">
@@ -36,10 +36,10 @@ export default function About() {
                 I have experience in web site design & building and
                 customization. I am good to building web use{' '}
                 <strong>Html, Css, Javascript, ReactJs and TailwindCss</strong>.
-                But, i'm really like use ReactJs and TailwindCss. I love to
-                talk with you about our unique approach. Also, i am good to
-                Google search and find the best solution for you. Feel free to
-                contact me writing an email with your project idea.
+                But, i'm really like use ReactJs and TailwindCss. I love to talk
+                with you about our unique approach. Also, i am good to Google
+                search and find the best solution for you. Feel free to contact
+                me writing an email with your project idea.
               </p>
             </div>
           </Fade>
@@ -56,5 +56,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }
