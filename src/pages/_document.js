@@ -27,7 +27,7 @@ export default function Document() {
                 <meta property="og:image:type" content="image/jpeg" />
                 <meta
                     property="og:url"
-                    content="blob:https://vercel.com/d1e04236-5b4d-48dd-bde4-ac50f01fc1a2"
+                    content="https://www.screenshotmachine.com/serve.php?file=result&1677161011529"
                 />
                 <meta
                     property="og:title"
