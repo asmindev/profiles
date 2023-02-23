@@ -18,6 +18,25 @@ export default function Document() {
                     content="front-end developer, next.js, web development, responsive design, user experience, portfolio"
                 />
                 <meta name="author" content="Asmin" />
+                <meta
+                    property="og:image"
+                    content="https://example.com/image.jpg"
+                />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:type" content="image/jpeg" />
+                <meta
+                    property="og:url"
+                    content="blob:https://vercel.com/d1e04236-5b4d-48dd-bde4-ac50f01fc1a2"
+                />
+                <meta
+                    property="og:title"
+                    content="Web Profile - Asmin | Front-End Web Developer using Next.js"
+                />
+                <meta
+                    property="og:description"
+                    content="Hi, I'm Asmin, a Front-End Web Developer using Next.js. View my portfolio and learn more about my experience and skills in developing responsive and user-friendly websites."
+                />
                 <link
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
