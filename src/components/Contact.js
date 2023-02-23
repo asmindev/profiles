@@ -130,7 +130,7 @@ export default function Contact() {
                         </div>
                         <form
                             onSubmit={onSubmit}
-                            className="w-full max-w-lg my-6"
+                            className="p-2 w-full max-w-lg my-6"
                         >
                             <div className="flex flex-wrap">
                                 <div className="w-full md:w-1/2 mb-4 md:mb-0 md:px-0 md:pr-2 text-gray-200">
