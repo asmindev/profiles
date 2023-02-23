@@ -20,7 +20,7 @@ export default function Document() {
                 <meta name="author" content="Asmin" />
                 <meta
                     property="og:image"
-                    content="https://res.cloudinary.com/dph249ste/image/upload/v1677162346/asmindev-my-id-1024x768desktop-88d296_dtnzqc.jpgg"
+                    content="https://res.cloudinary.com/dph249ste/image/upload/v1677162346/asmindev-my-id-1024x768desktop-88d296_dtnzqc.jpg"
                 />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
