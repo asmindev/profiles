@@ -5,6 +5,7 @@ import Introduces from '@/components/Introduces'
 import MobileNav from '@/components/Mobile-Nav'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Projects from '@/components/Projects'
 
 export default function Index() {
     const [isMobile, setIsMobile] = useState(false)
@@ -33,6 +34,7 @@ export default function Index() {
             {isMobile ? <MobileNav /> : <Navbar />}
             <Jumbotron />
             <Introduces />
+            <Projects />
             <Contact />
             <Footer />
         </>

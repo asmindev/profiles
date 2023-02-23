@@ -1,4 +1,9 @@
 {
+    "settings": {
+        "import/resolver": {
+            "alias": [["@", "./src/"]]
+        }
+    },
     "env": {
         "browser": true,
         "es2021": true
@@ -15,11 +20,8 @@
         "indent": [2, 4],
         "no-console": 0,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        // jsx indent
         "react/jsx-indent": [2, 4],
-        // react no unescaped entities
         "react/no-unescaped-entities": 0,
-        // react indent props
         "react/jsx-indent-props": [2, 4],
         "jsx-a11y/label-has-associated-control": [
             2,
@@ -30,7 +32,10 @@
                 "depth": 3
             }
         ],
-        // anchor valid href
-        "jsx-a11y/anchor-is-valid": [2, 4]
+        "jsx-a11y/anchor-is-valid": "off",
+        // no extension
+        "import/extensions": 0,
+        // no unused expressions
+        "no-unused-expressions": 0
     }
 }
