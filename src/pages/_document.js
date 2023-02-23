@@ -20,15 +20,12 @@ export default function Document() {
                 <meta name="author" content="Asmin" />
                 <meta
                     property="og:image"
-                    content="https://example.com/image.jpg"
+                    content="https://res.cloudinary.com/dph249ste/image/upload/v1677162346/asmindev-my-id-1024x768desktop-88d296_dtnzqc.jpgg"
                 />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:type" content="image/jpeg" />
-                <meta
-                    property="og:url"
-                    content="https://www.screenshotmachine.com/serve.php?file=result&1677161011529"
-                />
+                <meta property="og:url" content="https://asmindev.my.id" />
                 <meta
                     property="og:title"
                     content="Web Profile - Asmin | Front-End Web Developer using Next.js"
