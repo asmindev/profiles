@@ -35,6 +35,7 @@ export default function MobileNav() {
                 </div>
                 <div className="flex items-center">
                     <button
+                        type="button"
                         onClick={() => setOpen(!open)}
                         className="focus:outline-none relative w-5 h-5"
                     >

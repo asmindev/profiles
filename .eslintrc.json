@@ -36,6 +36,9 @@
         // no extension
         "import/extensions": 0,
         // no unused expressions
-        "no-unused-expressions": 0
+        "no-unused-expressions": 0,
+        "comma-dangle": 0,
+        // props type
+        "react/prop-types": 0
     }
 }
