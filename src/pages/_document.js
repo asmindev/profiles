@@ -6,6 +6,18 @@ export default function Document() {
     return (
         <Html lang="en" className="scroll-smooth">
             <Head>
+                <title>
+                    Web Profile - Asmin | Front-End Web Developer using Next.js
+                </title>
+                <meta
+                    name="description"
+                    content="Hi, I'm Asmin, a Front-End Web Developer using Next.js. View my portfolio and learn more about my experience and skills in developing responsive and user-friendly websites."
+                />
+                <meta
+                    name="keywords"
+                    content="front-end developer, next.js, web development, responsive design, user experience, portfolio"
+                />
+                <meta name="author" content="Asmin" />
                 <link
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -14,7 +26,7 @@ export default function Document() {
                 <link
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
-                    crossOrigin
+                    crossOrigin="true"
                 />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Poppins:wght@400;800&display=swap"

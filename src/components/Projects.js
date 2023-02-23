@@ -86,6 +86,7 @@ export default function Projects() {
                                         <div className="w-full mt-2 flex gap-2 items-center h-full">
                                             {project.tech?.map((tech) => (
                                                 <img
+                                                    key={tech}
                                                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech}`}
                                                     alt={tech}
                                                     className="w-4 h-4"
