@@ -1,13 +1,50 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 
 export default function Introduces() {
+    const ref = useRef(null)
+    const inView = useInView(ref, { threshold: 0.5, once: true })
+    const stagger = {
+        initial: {},
+        animate: {
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.3,
+            },
+        },
+    }
+    const fadeInUp = {
+        initial: {
+            y: 80,
+            opacity: 0,
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.6,
+                ease: [0.6, -0.05, 0.01, 0.9],
+            },
+        },
+    }
     return (
         <div id="about" className="relative w-full my-32">
             <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-black/30 -z-10" />
             <div className="md:w-11/12 lg:w-9/12 mx-auto lg:p-6 h-full">
                 <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center mt-24">
-                    <div className="w-11/12 md:w-1/2 font-fira">
-                        <div className="lg:w-10/12 mx-auto md:mx-0 my-4">
+                    <motion.div
+                        ref={ref}
+                        // IN VIEW
+                        variants={stagger}
+                        animate={inView ? 'animate' : 'initial'}
+                        initial={inView ? 'initial' : 'animate'}
+                        className="w-11/12 md:w-1/2 font-fira"
+                    >
+                        <motion.div
+                            variants={fadeInUp}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            className="lg:w-10/12 mx-auto md:mx-0 my-4"
+                        >
                             <div className="w-full p-6 group bg-zinc-700/20 rounded-sm hover:shadow-2xl transition duration-300 backdrop-blur-xl backdrop-filter">
                                 <h3 className="text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Front-End
@@ -23,8 +60,11 @@ export default function Introduces() {
                                     Projects
                                 </a>
                             </div>
-                        </div>
-                        <div className="lg:w-10/12 mx-auto md:mx-0 my-4">
+                        </motion.div>
+                        <motion.div
+                            variants={fadeInUp}
+                            className="lg:w-10/12 mx-auto md:mx-0 my-4"
+                        >
                             <div className="w-full p-6 group bg-zinc-700/20 rounded-sm hover:shadow-2xl transition duration-300 backdrop-blur-xl backdrop-filter">
                                 <h3 className="text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Design
@@ -39,8 +79,11 @@ export default function Introduces() {
                                     Projects
                                 </a>
                             </div>
-                        </div>
-                        <div className="lg:w-10/12 mx-auto md:mx-0 my-4">
+                        </motion.div>
+                        <motion.div
+                            variants={fadeInUp}
+                            className="lg:w-10/12 mx-auto md:mx-0 my-4"
+                        >
                             <div className="w-full p-6 group bg-zinc-700/20 rounded-sm hover:shadow-2xl transition duration-300 backdrop-blur-xl backdrop-filter">
                                 <h3 className="text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Web Scraping
@@ -55,8 +98,11 @@ export default function Introduces() {
                                     Projects
                                 </a>
                             </div>
-                        </div>
-                        <div className="lg:w-10/12 mx-auto md:mx-0 my-4">
+                        </motion.div>
+                        <motion.div
+                            variants={fadeInUp}
+                            className="lg:w-10/12 mx-auto md:mx-0 my-4"
+                        >
                             <div className="w-full p-6 group bg-zinc-700/20 rounded-sm hover:shadow-2xl transition duration-300 backdrop-blur-xl backdrop-filter">
                                 <h3 className="text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Telegram Bot
@@ -71,8 +117,8 @@ export default function Introduces() {
                                     Projects
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                     <div className="w-11/12 md:w-1/2 font-fira flex flex-col justify-around">
                         <span className="text-gray-300 text-sm my-14 block text-left">
                             Introduce

@@ -35,6 +35,7 @@ export default function MobileNav() {
                 </div>
                 <div className="flex items-center">
                     <button
+                        id="button"
                         type="button"
                         onClick={() => setOpen(!open)}
                         className="focus:outline-none relative w-5 h-5"
@@ -83,6 +84,9 @@ export default function MobileNav() {
                     >
                         <motion.div variants={item} className="w-full">
                             <a
+                                onClick={() => {
+                                    setOpen(false)
+                                }}
                                 href="#"
                                 className="px-4 py-3 block w-full text-gray-50 hover:text-emerald-400 transition duration-300 tracking-wider"
                             >
@@ -91,6 +95,9 @@ export default function MobileNav() {
                         </motion.div>
                         <motion.div variants={item} className="w-full">
                             <a
+                                onClick={() => {
+                                    setOpen(false)
+                                }}
                                 href="#about"
                                 className="px-4 py-3 block w-full text-gray-50 hover:text-emerald-400 transition duration-300 tracking-wider"
                             >
@@ -99,6 +106,9 @@ export default function MobileNav() {
                         </motion.div>
                         <motion.div variants={item} className="w-full">
                             <a
+                                onClick={() => {
+                                    setOpen(false)
+                                }}
                                 href="#contact"
                                 className="px-4 py-3 block w-full text-gray-50 hover:text-emerald-400 transition duration-300 tracking-wider"
                             >
