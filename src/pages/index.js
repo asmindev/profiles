@@ -30,13 +30,13 @@ export default function Index() {
         }
     }, [])
     return (
-        <>
+        <div className="bg-zinc-800">
             {isMobile ? <MobileNav /> : <Navbar />}
             <Jumbotron />
             <Introduces />
             <Projects />
             <Contact />
             <Footer />
-        </>
+        </div>
     )
 }

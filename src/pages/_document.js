@@ -45,11 +45,11 @@ export default function Document() {
                     crossOrigin="true"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Poppins:wght@400;800&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&family=Fira+Mono:wght@400;500;700&family=Poppins:wght@400;800&display=swap"
                     rel="stylesheet"
                 />
             </Head>
-            <body className="bg-zinc-800">
+            <body className="">
                 <Main />
                 <NextScript />
             </body>
