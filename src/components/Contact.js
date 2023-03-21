@@ -95,7 +95,7 @@ export default function Contact() {
                     <h3 className="uppercase tracking-[0.5em] font-medium font-fira tetx-zinc-800 bg-emerald-400 w-fit px-4 py-1">
                         Get in touch
                     </h3>
-                    <h1 className="py-4 text-3xl font-bold text-white mb-6 font-fira">
+                    <h1 className="py-4 text-3xl font-bold text-white mb-6 font-fira uppercase tracking-wider">
                         Let's build something together.
                     </h1>
                 </div>

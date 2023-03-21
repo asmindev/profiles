@@ -160,8 +160,8 @@ export default function Projects() {
                                         exit={{ opacity: 0 }}
                                         className="w-11/12 md:w-1/2 lg:w-1/3 font-fira"
                                     >
-                                        <div className="lg:w-10/12 mx-auto md:mx-0 my-4 relative group">
-                                            <div className="absolute -z-50 top-0 left-0 w-full h-full bg-transparent rounded-sm group-hover:bg-emerald-400 transition-all duration-500 group-hover:rotate-3" />
+                                        <div className="lg:w-10/12 h-full mx-auto md:mx-0 my-4 relative group">
+                                            <div className="absolute top-0 left-0 bg-emerald-400 w-full h-full bg-transparent rounded-sm group-hover:bg-emerald-400 transition-all duration-500 group-hover:rotate-3 delay-75" />
                                             <div className="w-full p-6 group bg-zinc-800 rounded-sm group-hover:shadow-2xl group-hover:shadow-emerald-400/10 transition duration-300 backdrop-blur-xl backdrop-filter border border-emerald-400 group-hover:border-transparent">
                                                 <h3 className="text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                                     {project.title}
@@ -176,7 +176,7 @@ export default function Projects() {
                                                                 key={tech}
                                                                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech}`}
                                                                 alt={tech}
-                                                                className="w-4 h-4"
+                                                                className="w-4 h-4 grayscale group-hover:grayscale-0 transition-all duration-300"
                                                             />
                                                         )
                                                     )}

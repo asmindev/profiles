@@ -5,10 +5,7 @@ export default function Navbar() {
         <nav className="w-full md:w-11/12 lg:w-9/12 mx-auto lg:p-6">
             <div className="w-full flex justify-between items-center">
                 <div className="w-52">
-                    <a
-                        href="#"
-                        className="lg:text-2xl text-white font-poppins font-bold"
-                    >
+                    <a href="#" className="lg:text-2xl text-white font-bold">
                         Asmin
                     </a>
                 </div>
