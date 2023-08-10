@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -61,6 +63,26 @@ export default function Projects() {
             description: "Scraping anime data from otakudesu.to's website.",
             link: 'https://anime-api.asmindev.repl.co/',
             tech: ['python/python-original.svg'],
+        },
+        {
+            id: 6,
+            type: 'scraping',
+            title: 'Donghua API',
+            description: "Scraping anime data from anichin's website.",
+            link: 'https://anichin-api.asmindev.repl.co/',
+            tech: ['python/python-original.svg'],
+        },
+        {
+            id: 2,
+            type: 'web',
+            title: 'Douchin',
+            description:
+                'Douchin is a web app that displays anime and donghua data.',
+            link: 'https://dongx.asmindev.me',
+            tech: [
+                'nextjs/nextjs-original.svg',
+                'tailwindcss/tailwindcss-plain.svg',
+            ],
         },
     ]
     const [selected, setSelected] = useState('all')

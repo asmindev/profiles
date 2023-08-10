@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -67,18 +69,6 @@ export default function Contact() {
             name: 'Email',
             value: 'Asminmin477@gmail.com',
             icon: 'mail-outline',
-        },
-        {
-            id: 2,
-            name: 'WhatsApp',
-            value: '+62 (812) 4287-3775',
-            icon: 'logo-whatsapp',
-        },
-        {
-            id: 3,
-            name: 'Phone',
-            value: '+62 (812) 4287-3775',
-            icon: 'call-outline',
         },
         {
             id: 4,

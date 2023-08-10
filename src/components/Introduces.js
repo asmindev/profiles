@@ -1,35 +1,39 @@
+'use client'
+
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+
+const stagger = {
+    initial: {},
+    animate: {
+        transition: {
+            staggerChildren: 0.1,
+            delayChildren: 0.3,
+        },
+    },
+}
+const fadeInUp = {
+    initial: {
+        y: 80,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.6,
+            ease: [0.6, -0.05, 0.01, 0.9],
+        },
+    },
+}
 
 export default function Introduces() {
     const ref = useRef(null)
     const inView = useInView(ref, { threshold: 0.5, once: true })
-    const stagger = {
-        initial: {},
-        animate: {
-            transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.3,
-            },
-        },
-    }
-    const fadeInUp = {
-        initial: {
-            y: 80,
-            opacity: 0,
-        },
-        animate: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.6,
-                ease: [0.6, -0.05, 0.01, 0.9],
-            },
-        },
-    }
+
     return (
         <div id="about" className="relative w-full my-32">
-            <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-black/30 -z-10" />
+            <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-zinc-800/30 -z-10" />
             <div className="md:w-11/12 lg:w-9/12 mx-auto lg:p-6 h-full">
                 <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center mt-24">
                     <motion.div
