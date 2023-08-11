@@ -29,14 +29,12 @@ const fadeInUp = {
 }
 export default function Jumbotron() {
     return (
-        <div className="w-full md:w-11/12 lg:w-9/12 mx-auto lg:p-6 h-[70vh] flex flex-col justify-center items-center font-fira">
+        <div className="w-full md:w-11/12 lg:w-9/12 mx-auto lg:p-6 min-h-[70vh] flex flex-col justify-center items-center font-fira">
             <div className="relative w-fit mt-32">
-                <h1 className="font-black text-8xl text-white uppercase">
-                    Welcome
-                </h1>
+                <h1 className="font-black text-8xl uppercase">Welcome</h1>
                 <div className="absolute w-full h-2 bg-emerald-400" />
             </div>
-            <div className="mt-24 flex flex-col md:flex-row">
+            <div className="mt-24 flex flex-col-reverse md:flex-row">
                 <div className="w-full flex flex-col lg:flex-row justify-between items-center">
                     <motion.div
                         variants={stagger}
@@ -46,19 +44,19 @@ export default function Jumbotron() {
                     >
                         <motion.h3
                             variants={fadeInUp}
-                            className="my-12 w-fit bg-emerald-400 px-2 text-gray-800 font-fira"
+                            className="my-12 w-fit bg-emerald-400 px-2 text-white font-fira"
                         >
                             Front-End Developer
                         </motion.h3>
                         <motion.h1
                             variants={fadeInUp}
-                            className="text-4xl lg:text-6xl font-fira font-bold text-white text-left"
+                            className="text-4xl lg:text-6xl font-fira font-bold text-left"
                         >
                             Hi, I'm Asmin
                         </motion.h1>
                         <motion.p
                             variants={fadeInUp}
-                            className="text-justify text-gray-300 mt-4 lg:mt-8 font-fira leading-relaxed text-sm md:text-base"
+                            className="text-justify text-gray-700 dar:text-gray-300 mt-4 lg:mt-8 font-fira leading-relaxed text-sm md:text-base"
                         >
                             I love to create beautiful and functional web
                             applications. Show me your project and I'll make it
@@ -117,8 +115,8 @@ export default function Jumbotron() {
                         </div>
                     </motion.div>
                 </div>
-                <div className="w-full h-full flex items-center justify-end group">
-                    <div className="w-8/12 h-[26rem] bg-emerald-400 shadow-[0_50px_80px_-15px_rgba(0,0,0,0.3)] hover:shadow-emerald-400/30 transition-all duration-300">
+                <div className="w-full h-full flex items-center md:justify-end group">
+                    <div className="w-11/12 md:w-8/12 mx-auto h-[26rem] bg-emerald-400 shadow-[0_50px_80px_-15px_rgba(0,0,0,0.3)] hover:shadow-emerald-400/30 transition-all duration-300">
                         <Image
                             src="/photo.png"
                             className="object-cover w-full h-full"

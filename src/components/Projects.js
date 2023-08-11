@@ -3,88 +3,9 @@
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { projects, buttons } from '@/utils/project'
 
 export default function Projects() {
-    const projects = [
-        {
-            id: 1,
-            type: 'bot',
-            title: 'Spy bot',
-            description:
-                'The spy bot is a bot designed to track people using links.',
-            link: 'https://t.me/spytellbot',
-            tech: [
-                'python/python-original.svg',
-                'javascript/javascript-original.svg',
-                'mongodb/mongodb-original.svg',
-            ],
-        },
-        {
-            id: 2,
-            type: 'web',
-            title: 'Wistra',
-            description:
-                'Wistra is a web app that displays tourist destinations.',
-            link: 'https://wistra.my.id/',
-            tech: [
-                'nextjs/nextjs-original.svg',
-                'tailwindcss/tailwindcss-plain.svg',
-                'mongodb/mongodb-original.svg',
-            ],
-        },
-        {
-            id: 3,
-            title: 'Konda 1',
-            type: 'web',
-            description:
-                'Konda Satu is a village website that displays village information.',
-            link: 'https://desa.konda-satu.my.id/',
-            tech: [
-                'express/express-original.svg',
-                'tailwindcss/tailwindcss-plain.svg',
-                'mongodb/mongodb-original.svg',
-            ],
-        },
-        {
-            id: 4,
-            type: 'web',
-            title: 'Quran Lite',
-            description: 'Quran Lite is a web app that displays the Quran.',
-            link: 'https://quranlite.vercel.app/',
-            tech: [
-                'react/react-original.svg',
-                'tailwindcss/tailwindcss-plain.svg',
-            ],
-        },
-        {
-            id: 5,
-            type: 'scraping',
-            title: 'Anime API',
-            description: "Scraping anime data from otakudesu.to's website.",
-            link: 'https://anime-api.asmindev.repl.co/',
-            tech: ['python/python-original.svg'],
-        },
-        {
-            id: 6,
-            type: 'scraping',
-            title: 'Donghua API',
-            description: "Scraping anime data from anichin's website.",
-            link: 'https://anichin-api.asmindev.repl.co/',
-            tech: ['python/python-original.svg'],
-        },
-        {
-            id: 2,
-            type: 'web',
-            title: 'Douchin',
-            description:
-                'Douchin is a web app that displays anime and donghua data.',
-            link: 'https://dongx.asmindev.me',
-            tech: [
-                'nextjs/nextjs-original.svg',
-                'tailwindcss/tailwindcss-plain.svg',
-            ],
-        },
-    ]
     const [selected, setSelected] = useState('all')
     const [filteredProjects, setFilteredProjects] = useState([])
     const [show, setShow] = useState(false)
@@ -105,63 +26,30 @@ export default function Projects() {
 
     return (
         <div id="projects" className="relative w-full my-32">
-            <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-black/30 -z-10" />
+            <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-white/30 dark:to-black/30 -z-10" />
             <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto lg:p-6 h-full ">
-                <h1 className="text-gray-50 font-bold text-3xl lg:text-4xl mt-24 font-fira">
+                <h1 className="font-bold text-3xl lg:text-4xl mt-24 font-fira">
                     Projects
                 </h1>
-                <h3 className="text-gray-300 mt-1 text-[10px] font-fira">
+                <h3 className="text-gray-500 dark:text-gray-300 mt-1 text-[10px] font-fira">
                     Some projects are listed below.
                 </h3>
                 <div className="w-full flex gap-2 mt-4">
-                    <button
-                        type="button"
-                        onClick={() => {
-                            filterHandler('all')
-                            setSelected('all')
-                        }}
-                        className={`text-gray-50 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 ${
-                            selected === 'all' && 'decoration-emerald-400'
-                        }`}
-                    >
-                        All
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => {
-                            filterHandler('bot')
-                            setSelected('bot')
-                        }}
-                        className={`text-gray-50 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 ${
-                            selected === 'bot' && 'decoration-emerald-400'
-                        }`}
-                    >
-                        Bot
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => {
-                            filterHandler('web')
-                            setSelected('web')
-                        }}
-                        className={`text-gray-50 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-6 ${
-                            selected === 'web' && 'decoration-emerald-400'
-                        }`}
-                    >
-                        Web
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => {
-                            filterHandler('scraping')
-                            setSelected('scraping')
-                        }}
-                        className={`text-gray-50 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 ${
-                            selected === 'scraping' && 'decoration-emerald-400'
-                        }`}
-                    >
-                        Scraping
-                    </button>
+                    {buttons.map((e) => (
+                        <button
+                            key={e.id}
+                            type="button"
+                            onClick={() => {
+                                filterHandler(e.value)
+                                setSelected(e.value)
+                            }}
+                            className={`text-gray-600 dark:text-gray-50 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 ${
+                                selected === e.value && 'decoration-emerald-400'
+                            }`}
+                        >
+                            {e.value}
+                        </button>
+                    ))}
                 </div>
                 <AnimatePresence layoutId>
                     {show && (
@@ -184,11 +72,11 @@ export default function Projects() {
                                     >
                                         <div className="lg:w-10/12 h-full mx-auto md:mx-0 my-4 relative group">
                                             <div className="absolute top-0 left-0 bg-emerald-400 w-full h-full bg-transparent rounded-sm group-hover:bg-emerald-400 transition-all duration-500 group-hover:rotate-3 delay-75" />
-                                            <div className="w-full p-6 group bg-zinc-800 rounded-sm group-hover:shadow-2xl group-hover:shadow-emerald-400/10 transition duration-300 backdrop-blur-xl backdrop-filter border border-emerald-400 group-hover:border-transparent">
-                                                <h3 className="text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
+                                            <div className="w-full p-6 group bg-gradient-to-tr from-white/[0.95] to-white/[0.8] dark:from-zinc-700/95 dark:to-zinc-700/90 rounded-sm group-hover:shadow-2xl group-hover:shadow-emerald-400/10 transition duration-300 backdrop-blur-3xl backdrop-filter dark:border-[0.1px border-emerald-400 group-hover:border-transparent">
+                                                <h3 className="text-gray-700 dark:text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                                     {project.title}
                                                 </h3>
-                                                <p className="text-gray-300 text-[10px]">
+                                                <p className="text-gray-500 dark:text-gray-300 text-[10px]">
                                                     {project.description}
                                                 </p>
                                                 <div className="w-full mt-2 flex gap-2 items-center h-full">
