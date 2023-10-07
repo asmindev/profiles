@@ -59,6 +59,7 @@ const projects = [
         title: 'Donghua API',
         description: "Scraping anime data from anichin's website.",
         link: 'https://anichin-api.asmindev.repl.co/',
+
         tech: ['python/python-original.svg'],
     },
     {
@@ -68,6 +69,25 @@ const projects = [
         description:
             'Douchin is a web app that displays anime and donghua data.',
         link: 'https://dongx.asmindev.me',
+        tech: [
+            'nextjs/nextjs-original.svg',
+            'tailwindcss/tailwindcss-plain.svg',
+        ],
+    },
+    {
+        id: 6,
+        type: 'bot',
+        title: 'Telegram Storage',
+        description: 'Store your file in telegram with bot',
+        link: 'https://github.com/asmindev/telegram-storage/',
+        tech: ['express/express-original.svg', 'mongodb/mongodb-original.svg'],
+    },
+    {
+        id: 2,
+        type: 'web',
+        title: 'Quran Web',
+        description: 'Quran web, read quran in everywhere',
+        link: 'https://quran.asmindev.me',
         tech: [
             'nextjs/nextjs-original.svg',
             'tailwindcss/tailwindcss-plain.svg',

@@ -50,7 +50,7 @@ export default function Introduces() {
                             className="lg:w-10/12 mx-auto md:mx-0 my-4"
                         >
                             <div className="w-full p-6 group border shadow-xl shadow-gray-200/30 dark:shadow-black/20 border-white dark:border-zinc-700 bg-gradient-to-tr from-white/80 to-gray-50 dark:from-zinc-800/80 dark:to-zinc-80/10">
-                                <h3 className="text-gray-700 dark:text-gray-700 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
+                                <h3 className="text-gray-700 dark:text-gray-100 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Front-End
                                 </h3>
                                 <p className="text-gray-500 dark:text-gray-300 text-[10px]">

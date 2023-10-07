@@ -56,7 +56,7 @@ export default function Jumbotron() {
                         </motion.h1>
                         <motion.p
                             variants={fadeInUp}
-                            className="text-justify text-gray-700 dar:text-gray-300 mt-4 lg:mt-8 font-fira leading-relaxed text-sm md:text-base"
+                            className="text-justify text-gray-700 dark:text-gray-100 mt-4 lg:mt-8 font-fira leading-relaxed text-sm md:text-base"
                         >
                             I love to create beautiful and functional web
                             applications. Show me your project and I'll make it

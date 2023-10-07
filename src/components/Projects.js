@@ -95,7 +95,7 @@ export default function Projects() {
                                                     href={project.link}
                                                     target="_blank"
                                                     rel="noreferrer"
-                                                    className="block text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 mt-2"
+                                                    className="block text-gray-600 dark:text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 mt-2"
                                                 >
                                                     View
                                                 </a>

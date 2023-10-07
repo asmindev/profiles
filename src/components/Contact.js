@@ -85,23 +85,23 @@ export default function Contact() {
                     <h3 className="uppercase tracking-[0.5em] font-medium font-fira tetx-zinc-800 bg-emerald-400 w-fit px-4 py-1">
                         Get in touch
                     </h3>
-                    <h1 className="py-4 text-3xl font-bold text-white mb-6 font-fira uppercase tracking-wider">
+                    <h1 className="py-4 text-3xl font-bold text-gray-600 dark:text-white mb-6 font-fira uppercase tracking-wider">
                         Let's build something together.
                     </h1>
                 </div>
                 <div className="flex flex-col flex-wrap lg:flex-row font-fira">
                     <div className="w-full lg:w-1/2 lg:px-2">
                         <div className="w-full">
-                            <h2 className="font-thin text-gray-50">
+                            <h2 className="font-thin text-gray-600 dark:text-gray-50">
                                 Contact Info
                             </h2>
                         </div>
                         <table className="table-auto w-full mt-7">
-                            <tbody className="text-gray-200">
+                            <tbody className="text-gray-600 dark:text-gray-200">
                                 {contacts.map((contact) => (
                                     <tr key={contact.id}>
                                         <td className="flex gap-2">
-                                            <span className="flex items-center text-white">
+                                            <span className="flex items-center text-gray-600 dark:text-white">
                                                 <ion-icon name={contact.icon} />
                                             </span>
                                             {contact.name}
