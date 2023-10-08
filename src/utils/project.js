@@ -75,7 +75,7 @@ const projects = [
         ],
     },
     {
-        id: 6,
+        id: 8,
         type: 'bot',
         title: 'Telegram Storage',
         description: 'Store your file in telegram with bot',
@@ -83,11 +83,22 @@ const projects = [
         tech: ['express/express-original.svg', 'mongodb/mongodb-original.svg'],
     },
     {
-        id: 2,
+        id: 9,
         type: 'web',
         title: 'Quran Web',
         description: 'Quran web, read quran in everywhere',
         link: 'https://quran.asmindev.me',
+        tech: [
+            'nextjs/nextjs-original.svg',
+            'tailwindcss/tailwindcss-plain.svg',
+        ],
+    },
+    {
+        id: 9,
+        type: 'web',
+        title: 'Douchin',
+        description: 'watch donghua without ads',
+        link: 'https://dongx.asmindev.me',
         tech: [
             'nextjs/nextjs-original.svg',
             'tailwindcss/tailwindcss-plain.svg',
