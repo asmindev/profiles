@@ -94,11 +94,22 @@ const projects = [
         ],
     },
     {
-        id: 9,
+        id: 10,
         type: 'web',
         title: 'Douchin',
         description: 'watch donghua without ads',
         link: 'https://dongx.asmindev.me',
+        tech: [
+            'nextjs/nextjs-original.svg',
+            'tailwindcss/tailwindcss-plain.svg',
+        ],
+    },
+    {
+        id: 11,
+        type: 'web',
+        title: 'Todo List',
+        description: 'Simple todo app',
+        link: 'https://todo.asmindev.me',
         tech: [
             'nextjs/nextjs-original.svg',
             'tailwindcss/tailwindcss-plain.svg',
@@ -112,5 +123,4 @@ const buttons = [...new Set(button)].map((e, index) => ({
     value: e,
     id: index,
 }))
-console.log(buttons)
 export { projects, buttons }
