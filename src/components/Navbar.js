@@ -12,7 +12,7 @@ export default function Navbar() {
                     </a>
                 </div>
                 <div className="w-full flex items-center justify-between text-sm">
-                    <div className="flex lg:items-center gap-14 font-fira">
+                    <div className="flex lg:items-center gap-14">
                         <a
                             href="#"
                             className="text-gray-50 hover:text-emerald-400 transition duration-300 tracking-wider"
@@ -32,7 +32,7 @@ export default function Navbar() {
                             Contact
                         </a>
                     </div>
-                    <div className="flex lg:items-center gap-12 text-sm font-fira">
+                    <div className="flex lg:items-center gap-12 text-sm">
                         <span className="flex gap-3 items-center">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

@@ -42,7 +42,7 @@ export default function Introduces() {
                         variants={stagger}
                         animate={inView ? 'animate' : 'initial'}
                         initial={inView ? 'initial' : 'animate'}
-                        className="w-11/12 md:w-1/2 font-fira"
+                        className="w-11/12 md:w-1/2"
                     >
                         <motion.div
                             variants={fadeInUp}
@@ -59,7 +59,7 @@ export default function Introduces() {
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -78,7 +78,7 @@ export default function Introduces() {
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -97,7 +97,7 @@ export default function Introduces() {
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -116,24 +116,24 @@ export default function Introduces() {
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
                             </div>
                         </motion.div>
                     </motion.div>
-                    <div className="w-11/12 md:w-1/2 font-fira flex flex-col justify-around">
+                    <div className="w-11/12 md:w-1/2 flex flex-col justify-around">
                         <span className="text-gray-500 dark:text-gray-300  text-sm my-14 block text-left">
                             Introduce
                         </span>
-                        <h1 className="text-2xl lg:text-4xl my-4 font-fira font-thin text-left">
+                        <h1 className="text-2xl lg:text-4xl my-4 font-thin text-left">
                             Hello, i'm Asmin
                         </h1>
-                        <h2 className="text-gray-500 dark:text-gray-300  text-lg lg:text-2xl font-fira font-thin text-left">
+                        <h2 className="text-gray-500 dark:text-gray-300  text-lg lg:text-2xl font-thin text-left">
                             Every project is a new challenge for me.
                         </h2>
-                        <p className="my-8 leading-loose text-gray-600 dark:text-gray-300 text-xs font-fira">
+                        <p className="my-8 leading-loose text-gray-600 dark:text-gray-300 text-xs">
                             Since beggining my journey intered in design and
                             development, i am so passionate about it. I love to
                             create beautiful and modern websites. I have a lot

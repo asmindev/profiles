@@ -33,7 +33,7 @@ export default function MobileNav() {
         <div className="fixed top-0 left-0 w-full z-50">
             <div className="flex justify-between items-center px-4 py-3 bg-zinc-700/30 backdrop-blur-lg text-white">
                 <div className="flex items-center">
-                    <h1 className="text-2xl font-medium font-fira">Asmin</h1>
+                    <h1 className="text-2xl font-medium ">Asmin</h1>
                 </div>
                 <div className="flex items-center">
                     <button
@@ -82,7 +82,7 @@ export default function MobileNav() {
                         initial="hidden"
                         animate="show"
                         exit="exit"
-                        className="text-sm font-fira bg-zinc-700/30 backdrop-blur-lg"
+                        className="text-sm  bg-zinc-700/30 backdrop-blur-lg"
                     >
                         <motion.div variants={item} className="w-full">
                             <a

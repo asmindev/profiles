@@ -10,11 +10,6 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                poppins: ['Poppins', 'sans-serif'],
-                fira: ['Fira Mono', 'monospace'],
-                jakarta: ['Plus Jakarta Sans', 'sans-serif'],
-            },
             keyframes: {
                 wiggle: {
                     '0%, 100%': { transform: 'rotate(-3deg)' },

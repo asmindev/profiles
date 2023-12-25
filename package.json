@@ -21,6 +21,7 @@
         "react-toastify": "^9.1.1"
     },
     "devDependencies": {
+        "@irsyadadl/paranoid": "^0.5.2",
         "autoprefixer": "^10.4.13",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-import-resolver-alias": "^1.1.2",

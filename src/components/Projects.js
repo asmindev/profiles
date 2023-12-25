@@ -14,7 +14,7 @@ function Card({ project }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="w-64 h-full p-4 font-fira flex-none"
+            className="w-64 h-full p-4 flex-none"
         >
             <Image
                 className="w-full h-48 object-cover"
@@ -24,10 +24,10 @@ function Card({ project }) {
                 alt="banner"
             />
             <div className="w-full p-4 bg-white">
-                <h3 className="text-gray-700 dark:text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
+                <h3 className="text-gray-700 dark:text-gray-700 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                     {project.title}
                 </h3>
-                <p className="text-gray-500 dark:text-gray-300 text-[10px]">
+                <p className="text-gray-500 dark:text-gray-500 text-[10px]">
                     {project.description}
                 </p>
                 <div className="flex items-center gap-2 py-2">
@@ -44,7 +44,7 @@ function Card({ project }) {
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="block text-gray-600 dark:text-gray-100 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 mt-2"
+                    className="block text-gray-600 dark:text-gray-700 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-2 mt-2"
                 >
                     View
                 </a>
@@ -76,10 +76,10 @@ export default function Projects() {
         <div id="projects" className="relative h-full w-full my-32">
             <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-white/30 dark:to-black/30 -z-10" />
             <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto lg:p-6 h-full ">
-                <h1 className="font-bold text-3xl lg:text-4xl mt-24 font-fira">
+                <h1 className="font-bold text-3xl lg:text-4xl mt-24">
                     Projects
                 </h1>
-                <h3 className="text-gray-500 dark:text-gray-300 mt-1 text-[10px] font-fira">
+                <h3 className="text-gray-500 dark:text-gray-300 mt-1 text-[10px]">
                     Some projects are listed below.
                 </h3>
                 <div className="w-full flex gap-2 mt-4">
@@ -91,7 +91,7 @@ export default function Projects() {
                                 filterHandler(e.value)
                                 setSelected(e.value)
                             }}
-                            className={`text-gray-600 dark:text-gray-50 font-medium text-[10px] decoration-clone font-fira tracking-widest underline underline-offset-2 ${
+                            className={`text-gray-600 dark:text-gray-50 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-2 ${
                                 selected === e.value && 'decoration-emerald-400'
                             }`}
                         >

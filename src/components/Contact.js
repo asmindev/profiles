@@ -82,14 +82,14 @@ export default function Contact() {
         <div id="contact" className="w-full container mx-auto lg:w-9/12 my-32">
             <div className="container mx-auto px-4">
                 <div className="w-full">
-                    <h3 className="uppercase tracking-[0.5em] font-medium font-fira tetx-zinc-800 bg-emerald-400 w-fit px-4 py-1">
+                    <h3 className="uppercase tracking-[0.5em] font-medium text-zinc-800 bg-emerald-400 w-fit px-4 py-1">
                         Get in touch
                     </h3>
-                    <h1 className="py-4 text-3xl font-bold text-gray-600 dark:text-white mb-6 font-fira uppercase tracking-wider">
+                    <h1 className="py-4 text-3xl font-bold text-gray-600 dark:text-white mb-6 uppercase tracking-wider">
                         Let's build something together.
                     </h1>
                 </div>
-                <div className="flex flex-col flex-wrap lg:flex-row font-fira">
+                <div className="flex flex-col flex-wrap lg:flex-row">
                     <div className="w-full lg:w-1/2 lg:px-2">
                         <div className="w-full">
                             <h2 className="font-thin text-gray-600 dark:text-gray-50">

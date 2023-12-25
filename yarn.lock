@@ -60,6 +60,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@irsyadadl/paranoid@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@irsyadadl/paranoid/-/paranoid-0.5.2.tgz#a6e5c75aa8902d91cc8da1182fe4ea67fe2a155d"
+  integrity sha512-BxiiKkciSvuy8nksDbH9yyUhLIWWjzI6IvDtysadZV1E8r7Fd6ajXTnjDPHz/BTOIKy3wHPLVcmMpusEjYBzRQ==
+
 "@motionone/animation@^10.15.1":
   version "10.15.1"
   resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.15.1.tgz#4a85596c31cbc5100ae8eb8b34c459fb0ccf6807"
