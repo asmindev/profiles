@@ -32,7 +32,7 @@ export default function Jumbotron() {
     return (
         <div className="w-full md:w-11/12 lg:w-9/12 mx-auto lg:p-6 min-h-[70vh] flex flex-col justify-center items-center">
             <div className="relative w-fit mt-32">
-                <h1 className="font-black text-8xl uppercase text-gray-700 dark:text-gray-100">
+                <h1 className="font-black text-6xl md:text-8xl uppercase text-gray-700 dark:text-gray-100">
                     Welcome
                 </h1>
                 <div className="absolute w-full h-2 bg-emerald-400" />
@@ -59,7 +59,7 @@ export default function Jumbotron() {
                         </motion.h1>
                         <motion.p
                             variants={fadeInUp}
-                            className="text-justify text-gray-600 dark:text-gray-100 mt-4 lg:mt-8 leading-relaxed text-sm md:text-base"
+                            className="text-justify text-gray-600 dark:text-gray-100 mt-4 lg:mt-8 leading-relaxed md:text-base"
                         >
                             I love to create beautiful and functional web
                             applications. Show me your project and I'll make it

@@ -30,7 +30,7 @@ const fadeInUp = {
 
 export default function Resume() {
     return (
-        <div className="w-11/12 lg:w-9/12 mx-auto lg:p-6 h-full">
+        <div className="w-11/12 lg:w-9/12 mx-auto lg:p-6 h-full mb-28">
             <div className="">
                 <h1 className="text-3xl font-bold bg">Resume</h1>
             </div>

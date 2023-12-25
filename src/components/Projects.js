@@ -73,7 +73,7 @@ export default function Projects() {
     }, [])
 
     return (
-        <div id="projects" className="relative h-full w-full my-32">
+        <div id="projects" className="relative h-full w-full py-16">
             <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-white/30 dark:to-black/30 -z-10" />
             <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto lg:p-6 h-full ">
                 <h1 className="font-bold text-3xl lg:text-4xl mt-24">

@@ -53,13 +53,13 @@ export default function Introduces() {
                                 <h3 className="text-gray-700 dark:text-gray-100 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Front-End
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-300 text-[10px]">
+                                <p className="text-gray-500 dark:text-gray-300 text-sm">
                                     I build and develop with clean and modern
                                     design.
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-sm decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -73,12 +73,12 @@ export default function Introduces() {
                                 <h3 className="text-gray-700 dark:text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Design
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-300  text-[10px]">
+                                <p className="text-gray-500 dark:text-gray-300  text-sm">
                                     Create a beautiful for your project.
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-sm decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -92,12 +92,12 @@ export default function Introduces() {
                                 <h3 className="text-gray-700 dark:text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Web Scraping
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-300  text-[10px]">
+                                <p className="text-gray-500 dark:text-gray-300  text-sm">
                                     I can help you to get data from website.
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-sm decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -111,12 +111,12 @@ export default function Introduces() {
                                 <h3 className="text-gray-700 dark:text-gray-50 group-hover:text-emerald-400 font-bold text-md transition-all duration-300">
                                     Telegram Bot
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-300  text-[10px]">
+                                <p className="text-gray-500 dark:text-gray-300  text-sm">
                                     I can help you to create a telegram bot.
                                 </p>
                                 <a
                                     href="#projects"
-                                    className="block text-gray-400 dark:text-gray-100 font-medium text-[10px] decoration-clone tracking-widest underline underline-offset-4 mt-2"
+                                    className="block text-gray-400 dark:text-gray-100 font-medium text-sm decoration-clone tracking-widest underline underline-offset-4 mt-2"
                                 >
                                     Projects
                                 </a>
@@ -127,13 +127,13 @@ export default function Introduces() {
                         <span className="text-gray-500 dark:text-gray-300  text-sm my-14 block text-left">
                             Introduce
                         </span>
-                        <h1 className="text-2xl lg:text-4xl my-4 font-thin text-left">
+                        <h1 className="text-2xl lg:text-4xl my-4 font-bold text-left">
                             Hello, i'm Asmin
                         </h1>
                         <h2 className="text-gray-500 dark:text-gray-300  text-lg lg:text-2xl font-thin text-left">
                             Every project is a new challenge for me.
                         </h2>
-                        <p className="my-8 leading-loose text-gray-600 dark:text-gray-300 text-xs">
+                        <p className="my-8 leading-loose text-gray-600 dark:text-gray-300 text-justify">
                             Since beggining my journey intered in design and
                             development, i am so passionate about it. I love to
                             create beautiful and modern websites. I have a lot
