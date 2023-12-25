@@ -39,6 +39,7 @@
         "no-unused-expressions": 0,
         "comma-dangle": 0,
         // props type
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "import/no-extraneous-dependencies": 0
     }
 }

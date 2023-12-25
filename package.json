@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@emailjs/browser": "^3.10.0",
+        "@irsyadadl/paranoid": "^0.5.2",
         "@next/font": "13.1.6",
         "eslint": "^7.32.0 || ^8.2.0",
         "eslint-config-next": "13.1.6",
@@ -21,7 +22,6 @@
         "react-toastify": "^9.1.1"
     },
     "devDependencies": {
-        "@irsyadadl/paranoid": "^0.5.2",
         "autoprefixer": "^10.4.13",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-import-resolver-alias": "^1.1.2",

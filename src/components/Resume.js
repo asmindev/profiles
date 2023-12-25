@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { IconBag3, IconGraduate } from '@irsyadadl/paranoid'
 
 const stagger = {
